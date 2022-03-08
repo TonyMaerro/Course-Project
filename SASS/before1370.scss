@@ -1,10 +1,8 @@
-@import url("before1370.css") (max-width: 1230px) and (min-width: 769px);
-@import url("before768.css") (max-width: 768px) and (min-width: 365px);
 $measureDist: auto;
 $mainBG: #ffFFff; // white
-$widthBlocks: 1270px;
-$sizeText: 12px;
-$mainWidth: 1380px;
+$widthBlocks: 670px;
+$sizeText: 13.5px;
+$mainWidth: 780px;
 $marginLeft: ($mainWidth - $widthBlocks) / 2;
 * {
     margin: 0;
@@ -14,9 +12,13 @@ a {
     text-decoration: none;
 }
 
-main {
+body {
+    height: auto;
+}
+
+body main {
+    gap: 40px;
     display: flex;
-    flex-shrink: 0;
     align-items: center;
     flex-direction: column;
     padding: 0px;
@@ -27,7 +29,7 @@ main {
     height: auto;
 }
 
-header {
+body header {
     display: flex;
     flex-direction: column;
     Width: $mainWidth;
@@ -38,56 +40,56 @@ header {
     background-color: $mainBG;
 }
 
-.info {
+body .info {
     display: flex;
-    flex-shrink: 0;
     width: $widthBlocks;
     height: 48px;
-    margin-left: $marginLeft;
+    margin: 0 $marginLeft 0 $marginLeft;
     padding: 16px 0 16px 0;
     box-sizing: border-box;
     background-color: $mainBG;
     justify-content: space-between;
 }
 
-.greenInfo {
+body .greenInfo {
     color: green;
 }
 
-.contacts {
+body .contacts {
     width: 375px;
     display: flex;
-    flex-shrink: 0;
     justify-content: space-between;
 }
 
-.otherInfo {
+body .otherInfo {
     width: 197px;
     display: flex;
-    flex-shrink: 0;
     justify-content: space-between;
 }
 
-.forUser {
+body .forUser {
     margin-left: $marginLeft;
     background-color: $mainBG;
     Width: $widthBlocks;
-    Height: 130px;
+    Height: 110px;
     // Padding: 0px 40px 0px 40px;
     box-sizing: border-box;
     display: flex;
-    flex-shrink: 0;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: space-between;
     mix-blend-mode: through;
+    .logo {
+        width: $widthBlocks;
+    }
 }
 
-.research {
+body .research {
     display: flex;
-    flex-shrink: 0;
     width: 500px;
     justify-content: space-between;
     height: 42px;
+    align-self: center;
     border: 1px solid #D1D1D1;
     box-sizing: border-box;
     border-radius: 12px;
@@ -95,29 +97,29 @@ header {
     padding: 0px 16px 0 16px;
 }
 
-.allCateg {
+body .allCateg {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: $sizeText +3px;
+    font-size: $sizeText + 3px;
     height: 42px;
     line-height: 22px;
     color: #151515;
 }
 
-.search {
+body .search {
     Width: 262px;
     Height: 19px;
     Font-family: Open Sans;
-    font-size: $sizeText +2px;
+    font-size: $sizeText + 2px;
     font-weight: 400;
     background-color: $mainWidth;
     border: 0px solid white;
 }
 
-.prof_and_basket {
+body .prof_and_basket {
     display: flex;
-    flex-shrink: 0;
+    align-self: center;
     justify-content: space-between;
     width: 88px;
     height: 31px;
@@ -127,7 +129,7 @@ header {
     }
 }
 
-.categories {
+body .categories {
     position: relative;
     img {
         transition: transform 0.15s linear;
@@ -143,7 +145,7 @@ header {
     }
 }
 
-.wrapperCateg {
+body .wrapperCateg {
     backdrop-filter: blur(4px);
     background-color: RGBA(255, 255, 255, 0.7);
     visibility: hidden;
@@ -157,16 +159,15 @@ header {
     width: 145px;
 }
 
-.categ {
+body .categ {
     li {
         display: flex;
-        flex-shrink: 0;
         align-items: center;
         width: 145px;
         height: 20px;
         padding: 4px 3px 4px 3px;
         color: #151515;
-        font-size: $sizeText +3px;
+        font-size: $sizeText + 3px;
         i {
             color: red;
             font-weight: bold;
@@ -177,50 +178,45 @@ header {
         i {
             color: #11aa11;
         }
-        background-color: RGBA(244,
-        244,
-        244,
-        0.8);
+        background-color: RGBA(244, 244, 244, 0.8);
     }
 }
 
-.firstInfo {
+body .firstInfo {
     margin: 64px $marginLeft 64px $marginLeft;
-    background-color: $mainBG;
+    // background-color: #11aa11;
     Width: $widthBlocks;
-    Height: 280px;
+    Height: $widthBlocks + 200px;
     display: flex;
-    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 nav {
     display: flex;
-    flex-shrink: 0;
 }
 
-.categoryMenu {
+body .categoryMenu {
     margin: 14.5px 0px 14.5px 0px;
     Width: 269px;
     Height: 251px;
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.Menu {
+body .Menu {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: $sizeText +6px;
+    font-size: $sizeText + 6px;
     line-height: 27px;
     color: #151515;
 }
 
-ul {
+body ul {
     display: flex;
-    flex-shrink: 0;
     margin-top: 8px;
     flex-direction: column;
     align-items: flex-start;
@@ -234,14 +230,13 @@ ul {
         font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: $sizeText +2px;
+        font-size: $sizeText + 2px;
         color: #6A983C;
     }
 }
 
-.more {
+body .more {
     display: flex;
-    flex-shrink: 0;
     flex-direction: row;
     align-items: center;
     padding: 6px 16px;
@@ -260,7 +255,7 @@ ul {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: $sizeText +3px;
+    font-size: $sizeText + 3px;
     line-height: 22px;
     color: #151515;
     svg {
@@ -272,7 +267,7 @@ ul {
     }
 }
 
-.headingRec {
+body .headingRec {
     Width: 419px;
     height: 280px;
     position: relative;
@@ -302,7 +297,7 @@ ul {
             font-style: normal;
             font-weight: 600;
             color: black;
-            font-size: $sizeText +10px;
+            font-size: $sizeText + 10px;
             line-height: 33px;
             top: 74px;
             left: 33px;
@@ -311,7 +306,6 @@ ul {
     .readRec {
         z-index: 20;
         display: flex;
-        flex-shrink: 0;
         flex-direction: row;
         align-items: center;
         padding: 12px 16px;
@@ -326,7 +320,7 @@ ul {
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
-        font-size: $sizeText +3px;
+        font-size: $sizeText + 3px;
         line-height: 22px;
         justify-content: space-between;
         img {
@@ -342,18 +336,18 @@ ul {
     }
 }
 
-.products {
+body .products {
     margin: 64px $marginLeft 64px $marginLeft;
-    height: 480px - 128px;
+    height: $widthBlocks + 800px - 128px;
     width: $widthBlocks;
     display: flex;
-    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.product {
+body .product {
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -378,7 +372,6 @@ ul {
             }
         }
         display: flex;
-        flex-shrink: 0;
         flex-direction: row;
         align-items: center;
         padding: 12px;
@@ -404,9 +397,8 @@ ul {
     }
 }
 
-.sale {
+body .sale {
     display: flex;
-    flex-shrink: 0;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -421,21 +413,21 @@ ul {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: $sizeText +2px;
+    font-size: $sizeText + 2px;
     line-height: 18px;
     color: #6A983C;
 }
 
-.title {
+body .title {
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: $sizeText +3px;
+    font-size: $sizeText + 3px;
     line-height: 22px;
     color: #151515;
 }
 
-.description {
+body .description {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -444,11 +436,11 @@ ul {
     color: #575757;
 }
 
-.cost {
+body .cost {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: $sizeText +6px;
+    font-size: $sizeText + 6px;
     line-height: 27px;
     color: #151515;
     position: absolute;
@@ -456,11 +448,11 @@ ul {
     left: 16px;
 }
 
-div[name="wrapper"] {
+body div[name="wrapper"] {
     height: 43px;
 }
 
-.preCost {
+body .preCost {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -473,52 +465,56 @@ div[name="wrapper"] {
     left: 16px;
 }
 
-.sections {
+body .sections {
     position: relative;
     display: flex;
-    flex-shrink: 0;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     width: $widthBlocks;
-    height: 530px;
+    height: $widthBlocks + 710px;
     margin: 0px $marginLeft 0px $marginLeft;
     background-color: $mainBG;
 }
 
-.caption {
-    position: absolute;
+body .caption {
     display: block;
-    top: 70px;
-    left: 45px;
+    height: 27px;
+    width: 155px;
+    position: static;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: $sizeText +6px;
+    font-size: $sizeText + 6px;
     line-height: 27px;
     color: #151515;
 }
 
-.blogs {
+body .blogs {
     width: $widthBlocks;
     margin: 0px $marginLeft 0px $marginLeft;
     padding-bottom: 64px;
     box-sizing: border-box;
-    height: 596px;
+    height: 850px;
     position: relative;
-}
-
-.blogsWrapper {
     display: flex;
-    flex-shrink: 0;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 400px;
-    width: $widthBlocks;
-    position: absolute;
-    top: 132px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.mainBlog {
+body .blogsWrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 800px;
+    width: $widthBlocks;
+    position: static;
+    gap: 16px;
+}
+
+body .mainBlog {
     background-image: url("../IMG/j-scrr7LqOc.jpg");
     // background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     border-radius: 12px;
@@ -526,7 +522,7 @@ div[name="wrapper"] {
     Width: 469px;
     position: relative;
     display: flex;
-    flex-shrink: 0;
+    align-self: center;
     align-items: flex-end;
     Height: 400px;
     .type {
@@ -537,7 +533,7 @@ div[name="wrapper"] {
     box-sizing: border-box;
 }
 
-.type {
+body .type {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -546,7 +542,6 @@ div[name="wrapper"] {
     color: #6A983C;
     position: absolute;
     display: flex;
-    flex-shrink: 0;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -557,32 +552,31 @@ div[name="wrapper"] {
     border-radius: 12px;
 }
 
-.infoAboutProd {
+body .infoAboutProd {
     Width: 421px;
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     Height: 106px;
 }
 
-.descriptionProd {
+body .descriptionProd {
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: $sizeText +10px;
+    font-size: $sizeText + 10px;
     line-height: 33px;
     color: #FFFFFF;
 }
 
-.userAvatar {
+body .userAvatar {
     width: 32px;
     height: 32px;
     border-radius: 32px;
 }
 
-.userName {
+body .userName {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -591,17 +585,16 @@ div[name="wrapper"] {
     color: #FFFFFF;
 }
 
-.infoAboutUser {
+body .infoAboutUser {
     flex-wrap: nowrap;
     width: 156px;
     height: 32px;
     display: flex;
-    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
 }
 
-.date {
+body .date {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -611,9 +604,8 @@ div[name="wrapper"] {
     color: #FFFFFF;
 }
 
-.avrBlog {
+body .avrBlog {
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
@@ -642,10 +634,9 @@ div[name="wrapper"] {
         font-family: Poppins;
         font-style: normal;
         font-weight: 600;
-        font-size: $sizeText +6px;
+        font-size: $sizeText + 6px;
         line-height: 27px;
         display: flex;
-        flex-shrink: 0;
         height: 84px;
         flex-direction: column;
         justify-content: space-between;
@@ -660,25 +651,23 @@ div[name="wrapper"] {
     }
 }
 
-.smallWrap {
+body .smallWrap {
     width: 369px;
     height: 352px;
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
     .smallBlog {
         Width: 369px;
         background-color: $mainBG;
         display: flex;
-        flex-shrink: 0;
         justify-content: space-between;
         Height: 96px;
         .descriptionProd {
             font-family: Poppins;
             font-style: normal;
             font-weight: 600;
-            font-size: $sizeText +3px;
+            font-size: $sizeText + 3px;
             line-height: 22px;
             color: #151515;
             Width: 225px;
@@ -688,13 +677,11 @@ div[name="wrapper"] {
     [name=wrapperForText] {
         order: 1;
         display: flex;
-        flex-shrink: 0;
         flex-direction: column;
         justify-content: space-between;
         [name=wrapperOfUserInfo] {
             width: 140px;
             display: flex;
-            flex-shrink: 0;
             justify-content: space-between;
         }
         span {
@@ -714,36 +701,35 @@ div[name="wrapper"] {
     }
 }
 
-footer {
+body footer {
     width: $widthBlocks;
-    height: 556px;
+    height: 650px;
     background-color: $mainBG;
     margin: 0px $marginLeft 0px $marginLeft;
     padding: 64px 0px 64px 0px;
     display: flex;
-    flex-shrink: 0;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     .productTags {
         Width: $mainWidth - $marginLeft - 131px;
-        Height: 111px;
+        Height: 300px;
         background-color: $mainBG;
         position: relative;
         span {
-            position: absolute;
-            top: 0px;
-            left: 0px;
+            position: static;
             font-family: Poppins;
             font-style: normal;
             font-weight: 600;
-            font-size: $sizeText +6px;
+            font-size: $sizeText + 6px;
             line-height: 27px;
+            align-self: center;
             color: #151515;
         }
         display: flex;
-        flex-shrink: 0;
-        align-items: flex-end;
+        flex-direction: column;
+        justify-self: space-between;
+        gap: 16px;
         .tag {
             padding: 5px 14px;
             background: #F5F5F5;
@@ -751,7 +737,7 @@ footer {
             font-family: Poppins;
             font-style: normal;
             font-weight: 600;
-            font-size: $sizeText +3px;
+            font-size: $sizeText + 3px;
             line-height: 18px;
             color: #151515;
         }
@@ -764,13 +750,12 @@ footer {
     }
     .Contacts {
         display: flex;
-        flex-shrink: 0;
         justify-content: space-between;
         width: $widthBlocks;
+        flex-wrap: wrap;
         height: 167px;
         section {
             display: flex;
-            flex-shrink: 0;
             flex-direction: column;
             justify-content: space-between;
             height: 167px;
@@ -784,7 +769,7 @@ footer {
                 font-family: Open Sans;
                 font-style: normal;
                 font-weight: normal;
-                font-size: $sizeText +2px;
+                font-size: $sizeText + 2px;
                 line-height: 19px;
                 text-decoration: none;
                 color: #6A983C;
@@ -793,7 +778,7 @@ footer {
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: 600;
-                font-size: $sizeText +6px;
+                font-size: $sizeText + 6px;
                 line-height: 27px;
                 color: #151515;
             }
@@ -803,7 +788,7 @@ footer {
         font-family: Open Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: $sizeText +2px;
+        font-size: $sizeText + 2px;
         line-height: 19px;
         color: #151515;
     }
