@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -8,10 +9,17 @@ a {
 
 body {
   height: auto;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main {
-  gap: 40px;
+  gap: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,11 +32,27 @@ body main {
           flex-direction: column;
   padding: 0px;
   margin: 0px auto;
-  width: 680px;
+  width: 396px;
   background: #ffFFff;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
   height: auto;
+}
+
+body main header .burger {
+  z-index: 20;
+  display: block;
+  width: 30px;
+  height: 6px;
+  background: black;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 0px;
+  top: 20px;
+  position: absolute;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 body header {
@@ -39,7 +63,7 @@ body header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  Width: 680px;
+  Width: 396px;
   Height: 178px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -48,11 +72,30 @@ body header {
   background-color: #ffFFff;
 }
 
+body header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 396px;
+  height: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body .info {
-  display: none;
-  width: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 396px;
   height: 48px;
-  margin: 0 55px 0 55px;
+  margin: 0 0px 0 0px;
   padding: 16px 0 16px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -87,15 +130,19 @@ body .otherInfo {
 }
 
 body .forUser {
-  margin-left: 55px;
+  margin-left: 0px;
   background-color: #ffFFff;
-  Width: 570px;
-  Height: 110px;
+  Width: 396px;
+  Height: 170px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -108,14 +155,14 @@ body .forUser {
 }
 
 body .forUser .logo {
-  width: 570px;
+  width: 396px;
 }
 
 body .research {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 500px;
+  width: 400px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -136,19 +183,19 @@ body .allCateg {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 12px;
   height: 42px;
   line-height: 22px;
   color: #151515;
 }
 
 body .search {
-  Width: 262px;
+  Width: 200px;
   Height: 19px;
   Font-family: Open Sans;
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 400;
-  background-color: 680px;
+  background-color: 396px;
   border: 0px solid white;
 }
 
@@ -218,7 +265,7 @@ body .categ li {
   height: 20px;
   padding: 4px 3px 4px 3px;
   color: #151515;
-  font-size: 18px;
+  font-size: 11.5px;
 }
 
 body .categ li i {
@@ -236,9 +283,9 @@ body .categ:hover li i {
 }
 
 body .firstInfo {
-  margin: 64px 55px 64px 55px;
-  Width: 570px;
-  Height: 770px;
+  margin: 64px 0px 64px 0px;
+  Width: 396px;
+  Height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,7 +327,7 @@ body .Menu {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 27px;
   color: #151515;
 }
@@ -311,7 +358,7 @@ body ul li {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 14px;
   color: #6A983C;
 }
 
@@ -348,7 +395,7 @@ body .more {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 22px;
   color: #151515;
 }
@@ -364,7 +411,7 @@ body .more svg path {
 }
 
 body .headingRec {
-  Width: 419px;
+  Width: 396px;
   height: 280px;
   position: relative;
 }
@@ -384,13 +431,13 @@ body .headingRec span {
 
 body .headingRec span:first-child {
   top: 45px;
-  width: 100px;
+  width: 150px;
   left: 33px;
   display: block;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 18px;
 }
 
@@ -399,7 +446,7 @@ body .headingRec span:nth-child(2) {
   font-style: normal;
   font-weight: 600;
   color: black;
-  font-size: 25px;
+  font-size: 17px;
   line-height: 33px;
   top: 74px;
   left: 33px;
@@ -421,8 +468,8 @@ body .headingRec .readRec {
   position: absolute;
   bottom: 32px;
   left: 32px;
-  width: 163px;
-  height: 47px;
+  width: 193px;
+  height: 49px;
   border: 2px solid #92C064;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -430,7 +477,7 @@ body .headingRec .readRec {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14.5px;
   line-height: 22px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -452,9 +499,9 @@ body .headingRec .readRec:hover {
 }
 
 body .products {
-  margin: 64px 55px 64px 55px;
-  height: 1242px;
-  width: 570px;
+  margin: 64px 0px 64px 0px;
+  height: 1768px;
+  width: 396px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,19 +532,19 @@ body .product {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 16px;
-  width: 269px;
+  width: 369px;
   position: relative;
   border: 1px solid #D1D1D1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 12px;
-  height: 323px;
+  height: 453px;
   background-color: #ffFFff;
 }
 
 body .product img {
-  width: 237px;
-  height: 180px;
+  width: 337px;
+  height: 310px;
   display: block;
 }
 
@@ -526,7 +573,7 @@ body .product button {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14.6px;
   line-height: 22px;
   color: #FFFFFF;
 }
@@ -571,7 +618,7 @@ body .sale {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 18px;
   color: #6A983C;
 }
@@ -580,7 +627,7 @@ body .title {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 22px;
   color: #151515;
 }
@@ -589,7 +636,7 @@ body .description {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 16px;
   color: #575757;
 }
@@ -598,7 +645,7 @@ body .cost {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 14px;
   line-height: 27px;
   color: #151515;
   position: absolute;
@@ -614,7 +661,7 @@ body .preCost {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 7px;
   line-height: 18px;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
@@ -639,9 +686,9 @@ body .sections {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 570px;
-  height: 1280px;
-  margin: 0px 55px 0px 55px;
+  width: 396px;
+  height: 1906px;
+  margin: 0px 0px 0px 0px;
   background-color: #ffFFff;
 }
 
@@ -653,18 +700,23 @@ body .caption {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 17px;
   line-height: 27px;
   color: #151515;
 }
 
+body .userName,
+.date {
+  font-size: 11px !important;
+}
+
 body .blogs {
-  width: 570px;
-  margin: 0px 55px 0px 55px;
+  width: 396px;
+  margin: 0px 0px 0px 0px;
   padding-bottom: 64px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 850px;
+  height: 1250px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,7 +746,7 @@ body .blogsWrapper {
       -ms-flex-pack: center;
           justify-content: center;
   height: 800px;
-  width: 570px;
+  width: 396px;
   position: static;
   gap: 16px;
 }
@@ -702,7 +754,7 @@ body .blogsWrapper {
 body .mainBlog {
   background-image: url("../IMG/j-scrr7LqOc.jpg");
   border-radius: 12px;
-  Width: 469px;
+  Width: 395px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,7 +779,7 @@ body .type {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 7px;
   line-height: 18px;
   color: #6A983C;
   position: absolute;
@@ -752,7 +804,7 @@ body .type {
 }
 
 body .infoAboutProd {
-  Width: 421px;
+  Width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,9 +825,15 @@ body .descriptionProd {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
+  width: 390px;
+  height: 18px;
+  font-size: 17px;
   line-height: 33px;
   color: #FFFFFF;
+}
+
+.descriptionProd {
+  font-size: 17px !important;
 }
 
 body .userAvatar {
@@ -788,7 +846,7 @@ body .userName {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 7px;
   line-height: 16px;
   color: #FFFFFF;
 }
@@ -813,7 +871,7 @@ body .date {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 7px;
   line-height: 16px;
   width: 77px;
   color: #FFFFFF;
@@ -835,9 +893,9 @@ body .avrBlog {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0px;
-  width: 269px;
+  width: 299px;
   background-color: #ffFFff;
-  height: 343px;
+  height: 393px;
 }
 
 body .avrBlog div[name='wraps'] {
@@ -852,9 +910,19 @@ body .avrBlog img {
 }
 
 body .avrBlog .infoBlock {
-  width: 267px;
-  height: 100px;
+  width: 357px;
+  height: 357px;
   margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .avrBlog .descriptionProd {
@@ -863,12 +931,13 @@ body .avrBlog .descriptionProd {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 13px;
   line-height: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 84px;
+  height: 64px;
+  width: 269px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -883,11 +952,17 @@ body .avrBlog .descriptionProd {
 
 body .avrBlog .userName,
 body .avrBlog .date {
+  height: 20px;
   color: black;
 }
 
 body .avrBlog .type {
-  top: 204px;
+  top: 189px;
+  font-size: 7pxpx;
+}
+
+.type {
+  font-size: 13px !important;
 }
 
 body .smallWrap {
@@ -921,7 +996,7 @@ body .smallWrap .smallBlog .descriptionProd {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 22px;
   color: #151515;
   Width: 225px;
@@ -958,7 +1033,7 @@ body .smallWrap [name=wrapperForText] span {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 7px;
   line-height: 16px;
   color: #151515;
 }
@@ -973,10 +1048,10 @@ body .smallWrap .prodLogo {
 }
 
 body footer {
-  width: 570px;
-  height: 650px;
+  width: 396px;
+  height: 1750px;
   background-color: #ffFFff;
-  margin: 0px 55px 0px 55px;
+  margin: 0px 0px 0px 0px;
   padding: 64px 0px 64px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,8 +1069,8 @@ body footer {
 }
 
 body footer .productTags {
-  Width: 494px;
-  Height: 300px;
+  Width: 396px;
+  Height: 600px;
   background-color: #ffFFff;
   position: relative;
   display: -webkit-box;
@@ -1006,6 +1081,9 @@ body footer .productTags {
       -ms-flex-direction: column;
           flex-direction: column;
   justify-self: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 16px;
 }
 
@@ -1014,7 +1092,7 @@ body footer .productTags span {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 17px;
   line-height: 27px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1029,7 +1107,7 @@ body footer .productTags .tag {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 18px;
   color: #151515;
 }
@@ -1050,13 +1128,20 @@ body footer .Contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 570px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 396px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 167px;
+  height: 967px;
 }
 
 body footer .Contacts section {
@@ -1070,6 +1155,10 @@ body footer .Contacts section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 396px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 167px;
 }
 
@@ -1083,7 +1172,7 @@ body footer .Contacts section a {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 19px;
   text-decoration: none;
   color: #6A983C;
@@ -1093,7 +1182,7 @@ body footer .Contacts section .contactTitle {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
+  font-size: 16.5px;
   line-height: 27px;
   color: #151515;
 }
@@ -1102,7 +1191,7 @@ body footer .producer {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 12.6px;
   line-height: 19px;
   color: #151515;
 }

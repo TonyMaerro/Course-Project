@@ -1,11 +1,21 @@
 @import url("before1370.css") (max-width: 1230px) and (min-width: 769px);
-@import url("before768.css") (max-width: 768px) and (min-width: 365px);
+@import url("indexXR414.css") (max-width: 769px) and (min-width: 165px);
 $measureDist: auto;
 $mainBG: #ffFFff; // white
-$widthBlocks: 1270px;
+$widthBlocks: 1170px;
 $sizeText: 12px;
-$mainWidth: 1380px;
+$mainWidth: 1280px;
 $marginLeft: ($mainWidth - $widthBlocks) / 2;
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('Fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
 * {
     margin: 0;
 }
@@ -109,7 +119,7 @@ header {
     Width: 262px;
     Height: 19px;
     Font-family: Open Sans;
-    font-size: $sizeText +2px;
+    font-size: $sizeText + 2px;
     font-weight: 400;
     background-color: $mainWidth;
     border: 0px solid white;
@@ -288,10 +298,11 @@ ul {
         position: absolute;
         &:first-child {
             top: 45px;
-            width: 100px;
+            width: 120px;
             left: 33px;
             display: block;
             font-family: Poppins;
+            color: #6A983C;
             font-style: normal;
             font-weight: 600;
             font-size: $sizeText;
@@ -394,7 +405,7 @@ ul {
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
-        font-size: $sizeText+3px;
+        font-size: $sizeText+1px;
         line-height: 22px;
         color: #FFFFFF;
     }
