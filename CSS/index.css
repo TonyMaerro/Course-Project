@@ -40,10 +40,6 @@ main {
   height: auto;
 }
 
-main .burger {
-  display: none;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;

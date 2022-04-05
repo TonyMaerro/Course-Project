@@ -1,0 +1,680 @@
+@import url("before1370.css") (max-width: 1230px) and (min-width: 769px);
+@import url("indexXR414.css") (max-width: 769px) and (min-width: 165px);
+$measureDist: auto;
+$mainBG: #ffFFff; // white
+$widthBlocks: 1170px;
+$sizeText: 12px;
+$mainWidth: 1280px;
+$marginLeft: ($mainWidth - $widthBlocks) / 2;
+@font-face {
+    font-family: 'Poppins';
+    src: url('Fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('Fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px $measureDist;
+    width: $mainWidth;
+    background: $mainBG;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    height: auto;
+    header {
+        display: flex;
+        flex-direction: column;
+        Width: $mainWidth;
+        Height: 178px;
+        box-sizing: border-box;
+        Padding: 0px 0px 0px 0px;
+        mix-blend-mode: through;
+        background-color: $mainBG;
+        .info {
+            display: flex;
+            flex-shrink: 0;
+            width: $widthBlocks;
+            height: 48px;
+            margin-left: $marginLeft;
+            padding: 16px 0 16px 0;
+            box-sizing: border-box;
+            background-color: $mainBG;
+            justify-content: space-between;
+        }
+        .greenInfo {
+            color: green;
+        }
+        .contacts {
+            width: 375px;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: space-between;
+        }
+        .otherInfo {
+            width: 197px;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: space-between;
+        }
+    }
+    .forUser {
+        margin-left: $marginLeft;
+        background-color: $mainBG;
+        Width: $widthBlocks;
+        Height: 130px;
+        // Padding: 0px 40px 0px 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: space-between;
+        mix-blend-mode: through;
+    }
+    .research {
+        display: flex;
+        flex-shrink: 0;
+        width: 500px;
+        justify-content: space-between;
+        height: 42px;
+        border: 1px solid #D1D1D1;
+        box-sizing: border-box;
+        border-radius: 12px;
+        align-items: center;
+        padding: 0px 16px 0 16px;
+    }
+    .allCateg {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: $sizeText +3px;
+        height: 42px;
+        line-height: 22px;
+        color: #151515;
+    }
+    .search {
+        Width: 262px;
+        Height: 19px;
+        Font-family: Open Sans;
+        font-size: $sizeText + 2px;
+        font-weight: 400;
+        background-color: $mainWidth;
+        border: 0px solid white;
+    }
+    .prof_and_basket {
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-between;
+        width: 88px;
+        height: 31px;
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .categories {
+        position: relative;
+        img {
+            transition: transform 0.15s linear;
+        }
+        &:hover {
+            .wrapperCateg {
+                visibility: visible;
+                z-index: 5;
+            }
+            img[alt="arrow"] {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+    .wrapperCateg {
+        backdrop-filter: blur(4px);
+        background-color: RGBA(255, 255, 255, 0.7);
+        visibility: hidden;
+        position: absolute;
+        top: 70%;
+        left: -16px;
+        list-style-type: none;
+        height: auto;
+        padding: 0px;
+        box-sizing: border-box;
+        width: 145px;
+    }
+    .categ {
+        li {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            width: 145px;
+            height: 20px;
+            padding: 4px 3px 4px 3px;
+            color: #151515;
+            font-size: $sizeText +3px;
+            i {
+                color: red;
+                font-weight: bold;
+                width: 20px;
+            }
+        }
+        &:hover li {
+            i {
+                color: #11aa11;
+            }
+            background-color: RGBA(244,
+            244,
+            244,
+            0.8);
+        }
+    }
+    footer {
+        width: $widthBlocks;
+        height: 556px;
+        background-color: $mainBG;
+        margin: 0px $marginLeft 0px $marginLeft;
+        padding: 64px 0px 64px 0px;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        .productTags {
+            Width: $mainWidth - $marginLeft - 131px;
+            Height: 111px;
+            background-color: $mainBG;
+            position: relative;
+            span {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: $sizeText +6px;
+                line-height: 27px;
+                color: #151515;
+            }
+            display: flex;
+            flex-shrink: 0;
+            align-items: flex-end;
+            .tag {
+                padding: 5px 14px;
+                background: #F5F5F5;
+                border-radius: 12px;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: $sizeText +3px;
+                line-height: 18px;
+                color: #151515;
+            }
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 16px;
+            }
+        }
+        .Contacts {
+            display: flex;
+            flex-shrink: 0;
+            justify-content: space-between;
+            width: $widthBlocks;
+            height: 167px;
+            section {
+                display: flex;
+                flex-shrink: 0;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 167px;
+                &:nth-child(3),
+                &:nth-child(4) {
+                    height: 132px;
+                }
+                a {
+                    display: block;
+                    height: 19px;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: $sizeText +2px;
+                    line-height: 19px;
+                    text-decoration: none;
+                    color: #6A983C;
+                }
+                .contactTitle {
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: $sizeText +6px;
+                    line-height: 27px;
+                    color: #151515;
+                }
+            }
+        }
+        .producer {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: $sizeText +2px;
+            line-height: 19px;
+            color: #151515;
+        }
+    }
+    .homepage {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 48px;
+        align-items: center;
+        width: $widthBlocks;
+        height: 100%;
+        .homepage_content {
+            display: flex;
+            Width: 197px;
+            Height: 15px;
+            justify-content: space-between;
+            align-items: center;
+            .homepage_content_title {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: $sizeText;
+                line-height: 16px;
+                color: #A9A9A9;
+            }
+            .slash {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #D1D1D1;
+            }
+            .homepage_content_subtitle {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: $sizeText;
+                line-height: 16px;
+                color: #151515;
+            }
+        }
+    }
+    .name_Fruit_and_Veg {
+        width: $widthBlocks;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 48px;
+            color: #151515;
+        }
+    }
+    .filters {
+        height: 108px;
+        width: $widthBlocks;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        align-items: center;
+        .activeButtons {
+            display: flex;
+            width: $widthBlocks;
+            height: 42px;
+            justify-content: flex-start;
+            gap: 16px;
+            .wrapper_of_buttons {
+                height: 42px;
+                &:nth-child(2),
+                &:nth-child(3) {
+                    .butt_and_content {
+                        width: 97px - 32px;
+                        .flag {
+                            border-radius: 1.5px;
+                        }
+                    }
+                }
+                gap: 16px;
+                padding: 0px 19px 0px 16px;
+                background: #F9F9F9;
+                border: 1px solid #D1D1D1;
+                box-sizing: border-box;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .butt_and_content {
+                    height: 24px;
+                    width: 94px;
+                    gap: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .content {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: #151515;
+                    }
+                    .flag {
+                        border: 1.5px solid transparent;
+                        border-color: #D1D1D1;
+                        height: 20px;
+                        width: 20px;
+                        display: inline-block;
+                        border-radius: 400px;
+                        &:focus {
+                            border: 5px solid transparent;
+                            border-color: #151515;
+                        }
+                    }
+                }
+            }
+        }
+        .choosenFilters {
+            display: flex;
+            width: $widthBlocks;
+            height: 18px;
+            gap: 12px;
+            .applied_filters {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #A9A9A9;
+            }
+            .applied_filter {
+                display: flex;
+                background: #F4F8EC;
+                border-radius: 12px;
+                align-items: center;
+                height: 18px;
+                gap: 4px;
+                padding: 0px 8px 0px 8px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #6A983C;
+            }
+            .cross {
+                cursor: pointer;
+            }
+        }
+    }
+    .Wrapper_Products {
+        display: flex;
+        justify-content: space-between;
+        width: $widthBlocks;
+        height: 1304px;
+        padding: 64px 0px 64px 0px;
+        .addFilters {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 939px;
+            width: 266.97px;
+            gap: 48px;
+            .filter_brands {
+                width: 251px;
+                height: 211px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 16px;
+                .titleFilter {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: $sizeText +6px;
+                    line-height: 27px;
+                    color: #151515;
+                    font-family: 'Poppins';
+                }
+                .list_with_brands {
+                    display: flex;
+                    padding: 0;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    width: 268px;
+                    height: 132px;
+                    list-style-type: none;
+                    .brand {
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+                        Width: 190px;
+                        Height: 24px;
+                        input {
+                            width: 20px;
+                            height: 20px;
+                            border: 1.5px solid #D1D1D1;
+                            &:checked {
+                                background: #6A983C;
+                                color: white;
+                                border: 1.5px solid #46760A;
+                            }
+                        }
+                        span {
+                            font-family: 'Open Sans';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 19px;
+                            color: #151515;
+                        }
+                    }
+                }
+            }
+            .filter_star {
+                width: 268px;
+                height: 211px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 16px;
+                .titleFilter {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: $sizeText +6px;
+                    line-height: 27px;
+                    color: #151515;
+                    font-family: 'Poppins';
+                }
+                .list_with_stars {
+                    display: flex;
+                    padding: 0;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    width: 268px;
+                    height: 168px;
+                    list-style-type: none;
+                    .star {
+                        display: flex;
+                        gap: 8px;
+                        align-items: center;
+                        Width: 190px;
+                        Height: 24px;
+                        input {
+                            width: 20px;
+                            height: 20px;
+                            border: 1.5px solid #D1D1D1;
+                            &:checked {
+                                background: #6A983C;
+                                color: white;
+                                border: 1.5px solid #46760A;
+                            }
+                        }
+                        .nostar {
+                            path {
+                                fill: white !important;
+                                stroke: #D1D1D1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 868.99px;
+            height: 1176px;
+            // background-color: #11aa11;
+            .product {
+                width: 268px;
+                height: 360px;
+                border: 1px solid #D1D1D1;
+                box-sizing: border-box;
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 16px;
+                position: relative;
+                .sale {
+                    position: absolute;
+                    padding: 4px 8px 4px 8px;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                    background: #F4F8EC;
+                    border-radius: 12px;
+                    top: 28px;
+                    left: 36px;
+                    color: #6A983C;
+                }
+                .product_logo {
+                    background: #F9F9F9;
+                    border-radius: 12px;
+                    Width: 236px;
+                    Height: 180px;
+                }
+                .product_info {
+                    width: 236px;
+                    height: 132px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    .product_title {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 22px;
+                        color: #151515;
+                        height: 23px;
+                    }
+                    .product_description {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        height: 16px;
+                        color: #575757;
+                    }
+                    .product_stars {
+                        height: 16px;
+                        width: 88px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .nostar {
+                            path {
+                                fill: white !important;
+                                stroke: #D1D1D1;
+                            }
+                        }
+                        .blstar {
+                            path {
+                                fill: #151515 !important;
+                            }
+                        }
+                    }
+                    .cost_precost_buttonBuy {
+                        width: 236px;
+                        height: 45px;
+                        display: flex;
+                        justify-content: space-between;
+                        .costs {
+                            width: auto;
+                            padding-right: 4px;
+                            height: 45px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            .cost {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: $sizeText +6px;
+                                line-height: 27px;
+                                color: #151515;
+                            }
+                            .precost {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: $sizeText;
+                                line-height: 18px;
+                                text-decoration-line: line-through;
+                                color: #A9A9A9;
+                            }
+                        }
+                        .buttonBuy {
+                            background: #6A983C;
+                            border: 2px solid #46760A;
+                            box-sizing: border-box;
+                            width: 90px;
+                            height: 36px;
+                            border-radius: 12px;
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            cursor: pointer;
+                            line-height: 22px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,988 @@
+@import url("before1370.css") (max-width: 1230px) and (min-width: 769px);
+@import url("indexXR414.css") (max-width: 769px) and (min-width: 165px);
+@font-face {
+  font-family: 'Poppins';
+  src: url("Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("Fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px;
+  margin: 0px auto;
+  width: 1280px;
+  background: #ffFFff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  height: auto;
+}
+
+main header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  Width: 1280px;
+  Height: 178px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  Padding: 0px 0px 0px 0px;
+  mix-blend-mode: through;
+  background-color: #ffFFff;
+}
+
+main header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 1170px;
+  height: 48px;
+  margin-left: 55px;
+  padding: 16px 0 16px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffFFff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header .greenInfo {
+  color: green;
+}
+
+main header .contacts {
+  width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header .otherInfo {
+  width: 197px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .forUser {
+  margin-left: 55px;
+  background-color: #ffFFff;
+  Width: 1170px;
+  Height: 130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  mix-blend-mode: through;
+}
+
+main .research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 42px;
+  border: 1px solid #D1D1D1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 16px 0 16px;
+}
+
+main .allCateg {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  height: 42px;
+  line-height: 22px;
+  color: #151515;
+}
+
+main .search {
+  Width: 262px;
+  Height: 19px;
+  Font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: 1280px;
+  border: 0px solid white;
+}
+
+main .prof_and_basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 88px;
+  height: 31px;
+}
+
+main .prof_and_basket img {
+  width: 24px;
+  height: 24px;
+}
+
+main .categories {
+  position: relative;
+}
+
+main .categories img {
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+  transition: transform 0.15s linear, -webkit-transform 0.15s linear;
+}
+
+main .categories:hover .wrapperCateg {
+  visibility: visible;
+  z-index: 5;
+}
+
+main .categories:hover img[alt="arrow"] {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+main .wrapperCateg {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: RGBA(255, 255, 255, 0.7);
+  visibility: hidden;
+  position: absolute;
+  top: 70%;
+  left: -16px;
+  list-style-type: none;
+  height: auto;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 145px;
+}
+
+main .categ li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 145px;
+  height: 20px;
+  padding: 4px 3px 4px 3px;
+  color: #151515;
+  font-size: 15px;
+}
+
+main .categ li i {
+  color: red;
+  font-weight: bold;
+  width: 20px;
+}
+
+main .categ:hover li {
+  background-color: RGBA(244, 244, 244, 0.8);
+}
+
+main .categ:hover li i {
+  color: #11aa11;
+}
+
+main footer {
+  width: 1170px;
+  height: 556px;
+  background-color: #ffFFff;
+  margin: 0px 55px 0px 55px;
+  padding: 64px 0px 64px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main footer .productTags {
+  Width: 1094px;
+  Height: 111px;
+  background-color: #ffFFff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main footer .productTags span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+main footer .productTags .tag {
+  padding: 5px 14px;
+  background: #F5F5F5;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #151515;
+}
+
+main footer .productTags .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 16px;
+}
+
+main footer .Contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1170px;
+  height: 167px;
+}
+
+main footer .Contacts section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 167px;
+}
+
+main footer .Contacts section:nth-child(3), main footer .Contacts section:nth-child(4) {
+  height: 132px;
+}
+
+main footer .Contacts section a {
+  display: block;
+  height: 19px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #6A983C;
+}
+
+main footer .Contacts section .contactTitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+main footer .producer {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
+main .homepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1170px;
+  height: 100%;
+}
+
+main .homepage .homepage_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  Width: 197px;
+  Height: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .homepage .homepage_content .homepage_content_title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+main .homepage .homepage_content .slash {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #D1D1D1;
+}
+
+main .homepage .homepage_content .homepage_content_subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+main .name_Fruit_and_Veg {
+  width: 1170px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main .name_Fruit_and_Veg span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #151515;
+}
+
+main .filters {
+  height: 108px;
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .filters .activeButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1170px;
+  height: 42px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 16px;
+}
+
+main .filters .activeButtons .wrapper_of_buttons {
+  height: 42px;
+  gap: 16px;
+  padding: 0px 19px 0px 16px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content, main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content {
+  width: 65px;
+}
+
+main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content .flag, main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content .flag {
+  border-radius: 1.5px;
+}
+
+main .filters .activeButtons .wrapper_of_buttons .butt_and_content {
+  height: 24px;
+  width: 94px;
+  gap: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .filters .activeButtons .wrapper_of_buttons .butt_and_content .content {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
+main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag {
+  border: 1.5px solid transparent;
+  border-color: #D1D1D1;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border-radius: 400px;
+}
+
+main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag:focus {
+  border: 5px solid transparent;
+  border-color: #151515;
+}
+
+main .filters .choosenFilters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1170px;
+  height: 18px;
+  gap: 12px;
+}
+
+main .filters .choosenFilters .applied_filters {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+main .filters .choosenFilters .applied_filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F4F8EC;
+  border-radius: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 18px;
+  gap: 4px;
+  padding: 0px 8px 0px 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+}
+
+main .filters .choosenFilters .cross {
+  cursor: pointer;
+}
+
+main .Wrapper_Products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1170px;
+  height: 1304px;
+  padding: 64px 0px 64px 0px;
+}
+
+main .Wrapper_Products .addFilters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 939px;
+  width: 266.97px;
+  gap: 48px;
+}
+
+main .Wrapper_Products .addFilters .filter_brands {
+  width: 251px;
+  height: 211px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+main .Wrapper_Products .addFilters .filter_brands .titleFilter {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  font-family: 'Poppins';
+}
+
+main .Wrapper_Products .addFilters .filter_brands .list_with_brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 268px;
+  height: 132px;
+  list-style-type: none;
+}
+
+main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  Width: 190px;
+  Height: 24px;
+}
+
+main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #D1D1D1;
+}
+
+main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input:checked {
+  background: #6A983C;
+  color: white;
+  border: 1.5px solid #46760A;
+}
+
+main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand span {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
+main .Wrapper_Products .addFilters .filter_star {
+  width: 268px;
+  height: 211px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+main .Wrapper_Products .addFilters .filter_star .titleFilter {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  font-family: 'Poppins';
+}
+
+main .Wrapper_Products .addFilters .filter_star .list_with_stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 268px;
+  height: 168px;
+  list-style-type: none;
+}
+
+main .Wrapper_Products .addFilters .filter_star .list_with_stars .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  Width: 190px;
+  Height: 24px;
+}
+
+main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #D1D1D1;
+}
+
+main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input:checked {
+  background: #6A983C;
+  color: white;
+  border: 1.5px solid #46760A;
+}
+
+main .Wrapper_Products .addFilters .filter_star .list_with_stars .star .nostar path {
+  fill: white !important;
+  stroke: #D1D1D1;
+}
+
+main .Wrapper_Products .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 868.99px;
+  height: 1176px;
+}
+
+main .Wrapper_Products .products .product {
+  width: 268px;
+  height: 360px;
+  border: 1px solid #D1D1D1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  position: relative;
+}
+
+main .Wrapper_Products .products .product .sale {
+  position: absolute;
+  padding: 4px 8px 4px 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  background: #F4F8EC;
+  border-radius: 12px;
+  top: 28px;
+  left: 36px;
+  color: #6A983C;
+}
+
+main .Wrapper_Products .products .product .product_logo {
+  background: #F9F9F9;
+  border-radius: 12px;
+  Width: 236px;
+  Height: 180px;
+}
+
+main .Wrapper_Products .products .product .product_info {
+  width: 236px;
+  height: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .Wrapper_Products .products .product .product_info .product_title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  height: 23px;
+}
+
+main .Wrapper_Products .products .product .product_info .product_description {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  height: 16px;
+  color: #575757;
+}
+
+main .Wrapper_Products .products .product .product_info .product_stars {
+  height: 16px;
+  width: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .Wrapper_Products .products .product .product_info .product_stars .nostar path {
+  fill: white !important;
+  stroke: #D1D1D1;
+}
+
+main .Wrapper_Products .products .product .product_info .product_stars .blstar path {
+  fill: #151515 !important;
+}
+
+main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy {
+  width: 236px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs {
+  width: auto;
+  padding-right: 4px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .cost {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .precost {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #A9A9A9;
+}
+
+main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .buttonBuy {
+  background: #6A983C;
+  border: 2px solid #46760A;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90px;
+  height: 36px;
+  border-radius: 12px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  line-height: 22px;
+  color: #FFFFFF;
+}
