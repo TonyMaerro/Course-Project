@@ -24,6 +24,10 @@ a {
     text-decoration: none;
 }
 
+.info {
+    display: block;
+}
+
 main {
     display: flex;
     flex-shrink: 0;
@@ -95,7 +99,8 @@ header {
 .research {
     display: flex;
     flex-shrink: 0;
-    width: 500px;
+    width: auto;
+    gap: 24px;
     justify-content: space-between;
     height: 42px;
     border: 1px solid #D1D1D1;
@@ -105,14 +110,97 @@ header {
     padding: 0px 16px 0 16px;
 }
 
-.allCateg {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: $sizeText +3px;
-    height: 42px;
-    line-height: 22px;
-    color: #151515;
+.categories {
+    width: auto;
+    position: relative;
+    display: flex;
+    gap: 8px;
+    .contentCat {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+        color: #151515;
+    }
+    img {
+        transition: transform .21s linear;
+    }
+    &:hover {
+        img {
+            transform: rotate(-180deg);
+        }
+        .menuWrap {
+            list-style-type: none;
+            position: absolute;
+            padding: 4px 8px 4px 8px;
+            display: flex;
+            visibility: visible;
+            flex-direction: column;
+            gap: 9px;
+            z-index: 20;
+            top: 0%;
+            width: 130px + 13px;
+            left: -24px;
+            //background-color: #46760A;
+            .space {
+                height: 100px;
+                background-color: #151515;
+                width: 100px;
+            }
+            .pointsWrap {
+                display: flex;
+                height: auto;
+                width: 100%;
+                gap: 8px;
+                flex-direction: column;
+                border-radius: 5px;
+                padding: 8px;
+                border: 1px solid #d2d2d2;
+                backdrop-filter: blur(4px);
+                background-color: RGBA(93%, 93%, 93%, 0.09);
+                li {
+                    height: 20px;
+                    &:hover {
+                        background-color: RGBA(2%, 70%, 2%, 0.35);
+                        border-radius: 3px;
+                    }
+                    a:enabled,
+                    a {
+                        font-family: 'Poppins';
+                        font-size: $sizeText - 0px;
+                        color: #151515;
+                    }
+                }
+            }
+        }
+    }
+    .menuWrap {
+        list-style-type: none;
+        position: absolute;
+        padding: 4px 8px 4px 8px;
+        transition: top .05s linear;
+        visibility: hidden;
+        flex-direction: column;
+        gap: 9px;
+        z-index: 20;
+        top: 1000%;
+        width: 130px + 86px;
+        left: -16px;
+        // background-color: #46760A;
+        .space {
+            height: 100px;
+            width: 100px;
+            visibility: hidden;
+        }
+        .pointsWrap {
+            display: flex;
+            height: auto;
+            width: auto;
+            gap: 8px;
+            flex-direction: column;
+        }
+    }
 }
 
 .search {
@@ -123,6 +211,7 @@ header {
     font-weight: 400;
     background-color: $mainWidth;
     border: 0px solid white;
+    outline: none;
 }
 
 .prof_and_basket {
@@ -134,63 +223,6 @@ header {
     img {
         width: 24px;
         height: 24px;
-    }
-}
-
-.categories {
-    position: relative;
-    img {
-        transition: transform 0.15s linear;
-    }
-    &:hover {
-        .wrapperCateg {
-            visibility: visible;
-            z-index: 5;
-        }
-        img[alt="arrow"] {
-            transform: rotate(-180deg);
-        }
-    }
-}
-
-.wrapperCateg {
-    backdrop-filter: blur(4px);
-    background-color: RGBA(255, 255, 255, 0.7);
-    visibility: hidden;
-    position: absolute;
-    top: 70%;
-    left: -16px;
-    list-style-type: none;
-    height: auto;
-    padding: 0px;
-    box-sizing: border-box;
-    width: 145px;
-}
-
-.categ {
-    li {
-        display: flex;
-        flex-shrink: 0;
-        align-items: center;
-        width: 145px;
-        height: 20px;
-        padding: 4px 3px 4px 3px;
-        color: #151515;
-        font-size: $sizeText +3px;
-        i {
-            color: red;
-            font-weight: bold;
-            width: 20px;
-        }
-    }
-    &:hover li {
-        i {
-            color: #11aa11;
-        }
-        background-color: RGBA(244,
-        244,
-        244,
-        0.8);
     }
 }
 

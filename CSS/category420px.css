@@ -1,5 +1,3 @@
-@import url("category1200px.css") (max-width: 1200px) and (min-width: 421px);
-@import url("category420px.css") (max-width: 420px) and (min-width: 0);
 @font-face {
   font-family: 'Poppins';
   src: url("Fonts/Poppins/Poppins-Regular.ttf");
@@ -18,7 +16,8 @@ a {
   text-decoration: none;
 }
 
-main {
+body main {
+  gap: 32px;
   display: flex;
   flex: 1;
   flex-shrink: 0;
@@ -26,17 +25,17 @@ main {
   flex-direction: column;
   padding: 0px;
   margin: 0px auto;
-  width: 1280px;
+  width: 412px;
   background: #ffFFff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   height: auto;
 }
 
-main header {
+body main header {
   display: flex;
   flex: 1;
   flex-direction: column;
-  Width: 1280px;
+  Width: 412px;
   Height: 178px;
   box-sizing: border-box;
   Padding: 0px 0px 0px 0px;
@@ -44,41 +43,39 @@ main header {
   background-color: #ffFFff;
 }
 
-main header .info {
-  display: flex;
+body main header .info {
+  display: none;
+  flex: 1;
   flex-shrink: 0;
-  width: 1170px;
-  height: 48px;
-  margin-left: 55px;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 410px;
+  height: auto;
+  margin-left: 1px;
   padding: 16px 0 16px 0;
   box-sizing: border-box;
   background-color: #ffFFff;
   justify-content: space-between;
 }
 
-main header .greenInfo {
-  color: green;
+body main header .info span {
+  font-size: 20px;
 }
 
-main header .contacts {
-  width: 375px;
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-}
-
-main header .otherInfo {
+body main header .otherInfo {
   width: 197px;
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
 }
 
-main .forUser {
-  margin-left: 55px;
+body main .forUser {
+  margin-left: 1px;
   background-color: #ffFFff;
-  Width: 1170px;
-  Height: 130px;
+  Width: 410px;
+  Height: auto;
+  gap: 16px;
+  flex-wrap: wrap;
   box-sizing: border-box;
   display: flex;
   flex-shrink: 0;
@@ -87,31 +84,78 @@ main .forUser {
   mix-blend-mode: through;
 }
 
-main .forUser .categories {
+body main .research {
+  display: flex;
+  flex-shrink: 0;
+  flex: 1;
+  width: 500px;
+  justify-content: space-between;
+  height: 42px;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  align-items: center;
+  padding: 0px 16px 0 16px;
+}
+
+body main .allCateg {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  height: 42px;
+  line-height: 22px;
+  color: #151515;
+}
+
+body main .search {
+  Width: 240px;
+  Height: 19px;
+  Font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: 412px;
+  border: 0px solid white;
+}
+
+body main .prof_and_basket {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: 88px;
+  height: 31px;
+}
+
+body main .prof_and_basket img {
+  width: 24px;
+  height: 24px;
+}
+
+body main .categories {
   width: auto;
   position: relative;
   display: flex;
   gap: 8px;
 }
 
-main .forUser .categories .contentCat {
+body main .categories .contentCat {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 12px !important;
   line-height: 22px;
   color: #151515;
 }
 
-main .forUser .categories img {
+body main .categories img {
   transition: transform .21s linear;
 }
 
-main .forUser .categories:hover img {
+body main .categories:hover img {
   transform: rotate(-180deg);
 }
 
-main .forUser .categories:hover .menuWrap {
+body main .categories:hover .menuWrap {
   list-style-type: none;
   position: absolute;
   padding: 4px 8px 4px 8px;
@@ -121,44 +165,43 @@ main .forUser .categories:hover .menuWrap {
   gap: 9px;
   z-index: 20;
   top: 100%;
-  width: 156px;
+  width: 156px !important;
   left: -24px;
 }
 
-main .forUser .categories:hover .menuWrap .space {
+body main .categories:hover .menuWrap .space {
   height: 10px;
 }
 
-main .forUser .categories:hover .menuWrap .pointsWrap {
+body main .categories:hover .menuWrap .pointsWrap {
   display: flex;
   height: auto;
-  width: auto;
+  width: 100%;
   gap: 8px;
   flex-direction: column;
   border-radius: 5px;
   padding: 8px;
   border: 1px solid #d2d2d2;
   backdrop-filter: blur(4px);
-  background-color: RGBA(93%, 93%, 93%, 0.09);
+  background-color: RGBA(23%, 23%, 23%, 0.79) !important;
 }
 
-main .forUser .categories:hover .menuWrap .pointsWrap li {
+body main .categories:hover .menuWrap .pointsWrap li {
   height: 20px;
 }
 
-main .forUser .categories:hover .menuWrap .pointsWrap li:hover {
+body main .categories:hover .menuWrap .pointsWrap li:hover {
   background-color: RGBA(2%, 70%, 2%, 0.35);
-  border-radius: 3px;
 }
 
-main .forUser .categories:hover .menuWrap .pointsWrap li a:enabled,
-main .forUser .categories:hover .menuWrap .pointsWrap li a {
+body main .categories:hover .menuWrap .pointsWrap li a:enabled,
+body main .categories:hover .menuWrap .pointsWrap li a {
   font-family: 'Poppins';
-  font-size: 12px;
-  color: #151515;
+  font-size: 13px !important;
+  color: #f5f5f5 !important;
 }
 
-main .forUser .categories .menuWrap {
+body main .categories .menuWrap {
   list-style-type: none;
   position: absolute;
   padding: 4px 8px 4px 8px;
@@ -172,11 +215,11 @@ main .forUser .categories .menuWrap {
   left: -16px;
 }
 
-main .forUser .categories .menuWrap .space {
+body main .categories .menuWrap .space {
   height: 30px;
 }
 
-main .forUser .categories .menuWrap .pointsWrap {
+body main .categories .menuWrap .pointsWrap {
   display: flex;
   height: auto;
   width: auto;
@@ -184,231 +227,188 @@ main .forUser .categories .menuWrap .pointsWrap {
   flex-direction: column;
 }
 
-main .research {
-  display: flex;
-  flex-shrink: 0;
-  width: 500px;
-  justify-content: space-between;
-  height: 42px;
-  border: 1px solid #D1D1D1;
-  box-sizing: border-box;
-  border-radius: 12px;
-  align-items: center;
-  padding: 0px 16px 0 16px;
-}
-
-main .allCateg {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  height: 42px;
-  line-height: 22px;
-  color: #151515;
-}
-
-main .search {
-  width: 262px;
-  height: 19px;
-  font-family: 'Open Sans';
-  font-size: 14px;
-  font-weight: 400;
-  background-color: 1280px;
-  border: 0px solid white;
-  outline: none;
-}
-
-main .prof_and_basket {
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-  width: 88px;
-  height: 31px;
-}
-
-main .prof_and_basket img {
-  width: 24px;
-  height: 24px;
-}
-
-main .wrapperCateg {
-  backdrop-filter: blur(4px);
-  background-color: RGBA(255, 255, 255, 0.7);
-  visibility: hidden;
-  position: absolute;
-  top: 70%;
-  left: -16px;
-  list-style-type: none;
+body main footer {
+  width: 410px;
   height: auto;
-  padding: 0px;
-  box-sizing: border-box;
-  width: 145px;
-}
-
-main footer {
-  width: 1170px;
-  height: auto;
+  flex-wrap: wrap;
+  gap: 32px;
   background-color: #ffFFff;
-  margin: 0px 55px 0px 55px;
+  margin: 0px 1px 0px 1px;
   padding: 64px 0px 64px 0px;
   display: flex;
-  gap: 32px;
   flex-shrink: 0;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-main footer .info {
-  display: none;
+body main footer .info {
+  display: flex;
+}
+
+body main footer .info {
+  flex: 1;
+  display: flex !important;
   flex-shrink: 0;
-  width: 1170px;
-  height: 48px;
-  margin-left: 55px;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 410px;
+  height: auto;
+  margin-left: 1px;
   padding: 16px 0 16px 0;
   box-sizing: border-box;
   background-color: #ffFFff;
   justify-content: space-between;
 }
 
-main footer .greenInfo {
+body main footer .info span {
+  font-size: 20px;
+}
+
+body main footer .info .greenInfo {
   color: green;
 }
 
-main footer .contacts {
+body main footer .info .contacts {
   width: 375px;
   display: flex;
   flex-shrink: 0;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-main footer .otherInfo {
-  width: 197px;
+body main footer .info .otherInfo {
+  width: 100%;
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
 }
 
-main footer .productTags {
-  Width: 1094px;
-  Height: auto;
+body main footer .productTags {
+  width: 280px;
+  height: auto;
   background-color: #ffFFff;
-  position: relative;
   display: flex;
-  flex-shrink: 0;
-  gap: 32px;
-  justify-content: space-between;
+  flex: 1;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
-main footer .productTags span {
+body main footer .productTags span {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 27px;
   color: #151515;
+  height: auto;
   display: block;
 }
 
-main footer .productTags .tag {
+body main footer .productTags .tag {
   padding: 5px 14px;
   background: #F5F5F5;
   border-radius: 12px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 18px;
   color: #151515;
 }
 
-main footer .productTags .tags {
+body main footer .productTags .tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 16px;
 }
 
-main footer .Contacts {
+body main footer .Contacts {
+  flex-wrap: wrap;
   display: flex;
+  flex-direction: column;
+  gap: 32px;
   flex-shrink: 0;
+  align-items: center;
   justify-content: space-between;
-  width: 1170px;
-  height: 167px;
+  width: auto;
+  width: 410px;
+  height: auto;
 }
 
-main footer .Contacts section {
+body main footer .Contacts section {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   height: 167px;
 }
 
-main footer .Contacts section:nth-child(3), main footer .Contacts section:nth-child(4) {
+body main footer .Contacts section:nth-child(3), body main footer .Contacts section:nth-child(4) {
   height: 132px;
 }
 
-main footer .Contacts section a {
+body main footer .Contacts section a {
   display: block;
   height: 19px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 19px;
   text-decoration: none;
   color: #6A983C;
 }
 
-main footer .Contacts section .contactTitle {
+body main footer .Contacts section .contactTitle {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 27px;
   color: #151515;
 }
 
-main footer .producer {
+body main footer .producer {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 19px;
   color: #151515;
 }
 
-main .homepage {
+body main .homepage {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   height: 48px;
   align-items: center;
-  width: 1170px;
+  width: 410px;
   height: 100%;
 }
 
-main .homepage .homepage_content {
+body main .homepage .homepage_content {
   display: flex;
-  Width: 197px;
+  Width: auto;
   Height: 15px;
   justify-content: space-between;
   align-items: center;
 }
 
-main .homepage .homepage_content .homepage_content_title {
+body main .homepage .homepage_content .homepage_content_title {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 16px;
   color: #A9A9A9;
 }
 
-main .homepage .homepage_content .slash {
+body main .homepage .homepage_content .slash {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -417,25 +417,24 @@ main .homepage .homepage_content .slash {
   color: #D1D1D1;
 }
 
-main .homepage .homepage_content .homepage_content_subtitle {
+body main .homepage .homepage_content .homepage_content_subtitle {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 16px;
   color: #151515;
 }
 
-main .name_Fruit_and_Veg {
-  width: 1170px;
+body main .name_Fruit_and_Veg {
+  width: 410px;
   height: 64px;
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-main .name_Fruit_and_Veg span {
+body main .name_Fruit_and_Veg span {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -444,26 +443,28 @@ main .name_Fruit_and_Veg span {
   color: #151515;
 }
 
-main .filters {
-  height: 108px;
-  width: 1170px;
+body main .filters {
+  height: auto;
+  width: 410px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   gap: 16px;
   align-items: center;
 }
 
-main .filters .activeButtons {
+body main .filters .activeButtons {
   display: flex;
-  width: 1170px;
-  height: 42px;
+  flex-wrap: wrap;
+  width: 410px;
+  height: auto;
   justify-content: flex-start;
   gap: 16px;
 }
 
-main .filters .activeButtons .wrapper_of_buttons {
-  height: 42px;
+body main .filters .activeButtons .wrapper_of_buttons {
+  height: auto;
   gap: 16px;
   padding: 0px 19px 0px 16px;
   background: #F9F9F9;
@@ -475,24 +476,24 @@ main .filters .activeButtons .wrapper_of_buttons {
   justify-content: space-between;
 }
 
-main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content, main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content {
+body main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content, body main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content {
   width: 65px;
 }
 
-main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content .flag, main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content .flag {
-  border-radius: 1.5px !important;
+body main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content .flag, body main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content .flag {
+  border-radius: 1.5px;
 }
 
-main .filters .activeButtons .wrapper_of_buttons .butt_and_content {
+body main .filters .activeButtons .wrapper_of_buttons .butt_and_content {
   height: 24px;
   width: 94px;
   gap: 8px;
   display: flex;
   align-items: center;
-  justify-content: flex-start !important;
+  justify-content: space-between;
 }
 
-main .filters .activeButtons .wrapper_of_buttons .butt_and_content .content {
+body main .filters .activeButtons .wrapper_of_buttons .butt_and_content .content {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -501,7 +502,7 @@ main .filters .activeButtons .wrapper_of_buttons .butt_and_content .content {
   color: #151515;
 }
 
-main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag {
+body main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag {
   border: 1.5px solid transparent;
   border-color: #D1D1D1;
   height: 20px;
@@ -510,19 +511,19 @@ main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag {
   border-radius: 400px;
 }
 
-main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag:focus {
+body main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag:focus {
   border: 5px solid transparent;
   border-color: #151515;
 }
 
-main .filters .choosenFilters {
+body main .filters .choosenFilters {
   display: flex;
-  width: 1170px;
+  width: 410px;
   height: 18px;
   gap: 12px;
 }
 
-main .filters .choosenFilters .applied_filters {
+body main .filters .choosenFilters .applied_filters {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -531,7 +532,7 @@ main .filters .choosenFilters .applied_filters {
   color: #A9A9A9;
 }
 
-main .filters .choosenFilters .applied_filter {
+body main .filters .choosenFilters .applied_filter {
   display: flex;
   background: #F4F8EC;
   border-radius: 12px;
@@ -547,30 +548,31 @@ main .filters .choosenFilters .applied_filter {
   color: #6A983C;
 }
 
-main .filters .choosenFilters .cross {
+body main .filters .choosenFilters .cross {
   cursor: pointer;
 }
 
-main .Wrapper_Products {
+body main .Wrapper_Products {
   display: flex;
-  flex: 1;
   justify-content: space-between;
-  width: 1170px;
-  height: 1304px;
+  width: 410px;
+  height: auto;
+  gap: 16px;
+  flex-wrap: wrap;
   padding: 64px 0px 64px 0px;
 }
 
-main .Wrapper_Products .addFilters {
+body main .Wrapper_Products .addFilters {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 939px;
+  height: auto;
   width: 266.97px;
   gap: 48px;
 }
 
-main .Wrapper_Products .addFilters .filter_brands {
+body main .Wrapper_Products .addFilters .filter_brands {
   width: 251px;
   height: 211px;
   display: flex;
@@ -580,17 +582,17 @@ main .Wrapper_Products .addFilters .filter_brands {
   gap: 16px;
 }
 
-main .Wrapper_Products .addFilters .filter_brands .titleFilter {
+body main .Wrapper_Products .addFilters .filter_brands .titleFilter {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 27px;
   color: #151515;
   font-family: 'Poppins';
 }
 
-main .Wrapper_Products .addFilters .filter_brands .list_with_brands {
+body main .Wrapper_Products .addFilters .filter_brands .list_with_brands {
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -601,7 +603,7 @@ main .Wrapper_Products .addFilters .filter_brands .list_with_brands {
   list-style-type: none;
 }
 
-main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand {
+body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -609,19 +611,19 @@ main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand {
   Height: 24px;
 }
 
-main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input {
+body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input {
   width: 20px;
   height: 20px;
   border: 1.5px solid #D1D1D1;
 }
 
-main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input:checked {
+body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input:checked {
   background: #6A983C;
   color: white;
   border: 1.5px solid #46760A;
 }
 
-main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand span {
+body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand span {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -630,7 +632,7 @@ main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand span 
   color: #151515;
 }
 
-main .Wrapper_Products .addFilters .filter_star {
+body main .Wrapper_Products .addFilters .filter_star {
   width: 268px;
   height: 211px;
   display: flex;
@@ -640,17 +642,17 @@ main .Wrapper_Products .addFilters .filter_star {
   gap: 16px;
 }
 
-main .Wrapper_Products .addFilters .filter_star .titleFilter {
+body main .Wrapper_Products .addFilters .filter_star .titleFilter {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 27px;
   color: #151515;
   font-family: 'Poppins';
 }
 
-main .Wrapper_Products .addFilters .filter_star .list_with_stars {
+body main .Wrapper_Products .addFilters .filter_star .list_with_stars {
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -661,7 +663,7 @@ main .Wrapper_Products .addFilters .filter_star .list_with_stars {
   list-style-type: none;
 }
 
-main .Wrapper_Products .addFilters .filter_star .list_with_stars .star {
+body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -669,34 +671,34 @@ main .Wrapper_Products .addFilters .filter_star .list_with_stars .star {
   Height: 24px;
 }
 
-main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input {
+body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input {
   width: 20px;
   height: 20px;
   border: 1.5px solid #D1D1D1;
 }
 
-main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input:checked {
+body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input:checked {
   background: #6A983C;
   color: white;
   border: 1.5px solid #46760A;
 }
 
-main .Wrapper_Products .addFilters .filter_star .list_with_stars .star .nostar path {
+body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star .nostar path {
   fill: white !important;
   stroke: #D1D1D1;
 }
 
-main .Wrapper_Products .products {
+body main .Wrapper_Products .products {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   flex: 1;
+  gap: 16px;
   width: 868.99px;
   height: auto;
-  gap: 16px;
 }
 
-main .Wrapper_Products .products .product {
+body main .Wrapper_Products .products .product {
   width: 268px;
   height: 360px;
   border: 1px solid #D1D1D1;
@@ -710,7 +712,7 @@ main .Wrapper_Products .products .product {
   position: relative;
 }
 
-main .Wrapper_Products .products .product .sale {
+body main .Wrapper_Products .products .product .sale {
   position: absolute;
   padding: 4px 8px 4px 8px;
   font-family: 'Poppins';
@@ -725,15 +727,14 @@ main .Wrapper_Products .products .product .sale {
   color: #6A983C;
 }
 
-main .Wrapper_Products .products .product .product_logo {
+body main .Wrapper_Products .products .product .product_logo {
   background: #F9F9F9;
   border-radius: 12px;
   Width: 236px;
   Height: 180px;
-  object-fit: cover;
 }
 
-main .Wrapper_Products .products .product .product_info {
+body main .Wrapper_Products .products .product .product_info {
   width: 236px;
   height: 132px;
   display: flex;
@@ -742,7 +743,7 @@ main .Wrapper_Products .products .product .product_info {
   align-items: flex-start;
 }
 
-main .Wrapper_Products .products .product .product_info .product_title {
+body main .Wrapper_Products .products .product .product_info .product_title {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -752,7 +753,7 @@ main .Wrapper_Products .products .product .product_info .product_title {
   height: 23px;
 }
 
-main .Wrapper_Products .products .product .product_info .product_description {
+body main .Wrapper_Products .products .product .product_info .product_description {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -762,7 +763,7 @@ main .Wrapper_Products .products .product .product_info .product_description {
   color: #575757;
 }
 
-main .Wrapper_Products .products .product .product_info .product_stars {
+body main .Wrapper_Products .products .product .product_info .product_stars {
   height: 16px;
   width: 88px;
   display: flex;
@@ -770,23 +771,23 @@ main .Wrapper_Products .products .product .product_info .product_stars {
   align-items: center;
 }
 
-main .Wrapper_Products .products .product .product_info .product_stars .nostar path {
+body main .Wrapper_Products .products .product .product_info .product_stars .nostar path {
   fill: white !important;
   stroke: #D1D1D1;
 }
 
-main .Wrapper_Products .products .product .product_info .product_stars .blstar path {
+body main .Wrapper_Products .products .product .product_info .product_stars .blstar path {
   fill: #151515 !important;
 }
 
-main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy {
+body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy {
   width: 236px;
   height: 45px;
   display: flex;
   justify-content: space-between;
 }
 
-main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs {
+body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs {
   width: auto;
   padding-right: 4px;
   height: 45px;
@@ -796,26 +797,26 @@ main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy 
   align-items: flex-start;
 }
 
-main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .cost {
+body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .cost {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 27px;
   color: #151515;
 }
 
-main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .precost {
+body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .precost {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 18px;
   text-decoration-line: line-through;
   color: #A9A9A9;
 }
 
-main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .buttonBuy {
+body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .buttonBuy {
   background: #6A983C;
   border: 2px solid #46760A;
   box-sizing: border-box;
@@ -829,23 +830,4 @@ main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy 
   cursor: pointer;
   line-height: 22px;
   color: #FFFFFF;
-}
-
-.info {
-  flex: 1;
-  display: none;
-  flex-shrink: 0;
-  gap: 16px;
-  flex-wrap: wrap;
-  width: 1170px;
-  height: auto;
-  margin-left: 55px;
-  padding: 16px 0 16px 0;
-  box-sizing: border-box;
-  background-color: #ffFFff;
-  justify-content: space-between;
-}
-
-.info span {
-  font-size: 17px;
 }
