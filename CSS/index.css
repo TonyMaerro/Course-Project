@@ -486,7 +486,7 @@ ul li {
   color: #6A983C;
 }
 
-.title {
+.product_title {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -639,6 +639,10 @@ div[name="wrapper"] {
   width: 32px;
   height: 32px;
   border-radius: 32px;
+}
+
+img[alt=loop] {
+  cursor: pointer;
 }
 
 .userName {
@@ -796,6 +800,10 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+footer .info {
+  display: none;
 }
 
 footer .productTags {

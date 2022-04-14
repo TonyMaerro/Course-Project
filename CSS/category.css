@@ -197,6 +197,10 @@ main .research {
   padding: 0px 16px 0 16px;
 }
 
+main img[alt=loop] {
+  cursor: pointer;
+}
+
 main .allCateg {
   font-family: Poppins;
   font-style: normal;
