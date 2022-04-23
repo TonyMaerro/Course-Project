@@ -12,13 +12,20 @@ input_search.addEventListener("keyup", event => {
 loop.onclick = searchProd;
 
 function searchProd() {
-    searching_text = input_search.value;
+    searching_text = input_search.value.trim();
+    let isOnlySpace = true;
+
+    if (searching_text === "") {
+        input_search.value = "";
+        return;
+    }
+
     let noResult = true;
     for (let i = 0; i < titles.length; i++) {
         if (searching_text === "") {
             return;
         }
-        if (titles[i].innerText.toLowerCase().includes(searching_text.toLowerCase())) {
+        if (titles[i].innerText.toLowerCase().trim().includes(searching_text.toLowerCase())) {
             searching_Products[i].scrollIntoView({
                 behavior: "smooth",
                 block: "start"
@@ -44,10 +51,12 @@ function searchProd() {
         input_search.style.color = "red";
         input_search.style.fontWeight = "bold";
         input_search.style.transition = "all .3s";
+        input_search.disabled = 1;
         setTimeout(() => {
             input_search.style.fontWeight = "normal";
             input_search.style.color = "#151515";
             input_search.value = "";
+            input_search.disabled = 0;
         }, 1900);
     }
 }
