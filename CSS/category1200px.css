@@ -72,7 +72,7 @@ body main header .otherInfo {
   justify-content: space-between;
 }
 
-body main .forUser {
+body main header .forUser {
   margin-left: 105px;
   background-color: #ffFFff;
   Width: 770px;
@@ -85,7 +85,7 @@ body main .forUser {
   mix-blend-mode: through;
 }
 
-body main .research {
+body main header .research {
   display: flex;
   flex-shrink: 0;
   width: 500px;
@@ -98,14 +98,14 @@ body main .research {
   padding: 0px 16px 0 16px;
 }
 
-body main .categories {
+body main header .categories {
   width: auto;
   position: relative;
   display: flex;
   gap: 8px;
 }
 
-body main .categories .contentCat {
+body main header .categories .contentCat {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -114,15 +114,15 @@ body main .categories .contentCat {
   color: #151515;
 }
 
-body main .categories img {
+body main header .categories img {
   transition: transform .21s linear;
 }
 
-body main .categories:hover img {
+body main header .categories:hover img {
   transform: rotate(-180deg);
 }
 
-body main .categories:hover .menuWrap {
+body main header .categories:hover .menuWrap {
   list-style-type: none;
   position: absolute;
   padding: 4px 8px 4px 8px;
@@ -136,11 +136,11 @@ body main .categories:hover .menuWrap {
   left: -24px;
 }
 
-body main .categories:hover .menuWrap .space {
+body main header .categories:hover .menuWrap .space {
   height: 10px;
 }
 
-body main .categories:hover .menuWrap .pointsWrap {
+body main header .categories:hover .menuWrap .pointsWrap {
   display: flex;
   height: auto;
   width: auto;
@@ -153,22 +153,22 @@ body main .categories:hover .menuWrap .pointsWrap {
   background-color: RGBA(23%, 23%, 23%, 0.79) !important;
 }
 
-body main .categories:hover .menuWrap .pointsWrap li {
+body main header .categories:hover .menuWrap .pointsWrap li {
   height: 20px;
 }
 
-body main .categories:hover .menuWrap .pointsWrap li:hover {
+body main header .categories:hover .menuWrap .pointsWrap li:hover {
   background-color: RGBA(2%, 70%, 2%, 0.35);
 }
 
-body main .categories:hover .menuWrap .pointsWrap li a:enabled,
-body main .categories:hover .menuWrap .pointsWrap li a {
+body main header .categories:hover .menuWrap .pointsWrap li a:enabled,
+body main header .categories:hover .menuWrap .pointsWrap li a {
   font-family: 'Poppins';
   font-size: 13px;
   color: #f5f5f5 !important;
 }
 
-body main .categories .menuWrap {
+body main header .categories .menuWrap {
   list-style-type: none;
   position: absolute;
   padding: 4px 8px 4px 8px;
@@ -182,11 +182,11 @@ body main .categories .menuWrap {
   left: -16px;
 }
 
-body main .categories .menuWrap .space {
+body main header .categories .menuWrap .space {
   height: 30px;
 }
 
-body main .categories .menuWrap .pointsWrap {
+body main header .categories .menuWrap .pointsWrap {
   display: flex;
   height: auto;
   width: auto;
@@ -194,7 +194,7 @@ body main .categories .menuWrap .pointsWrap {
   flex-direction: column;
 }
 
-body main .search {
+body main header .search {
   Width: 262px;
   Height: 19px;
   Font-family: Open Sans;
@@ -204,7 +204,7 @@ body main .search {
   border: 0px solid white;
 }
 
-body main .prof_and_basket {
+body main header .prof_and_basket {
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
@@ -212,7 +212,7 @@ body main .prof_and_basket {
   height: 31px;
 }
 
-body main .prof_and_basket img {
+body main header .prof_and_basket img {
   width: 24px;
   height: 24px;
 }
