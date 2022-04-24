@@ -48,6 +48,7 @@ if (info_blogs != null) {
 if (ptrsMenu != null) {
     ptrsMenu.map(p => {
         p.style.cursor = "pointer";
+        p.href = "category.html";
         return p.onclick = () => {
             window.location.href = "category.html";
         };
@@ -55,6 +56,7 @@ if (ptrsMenu != null) {
 }
 if (more_cat != null) {
     more_cat.map(cat => {
+        more_cat.href = "category.html";
         cat.style.cursor = "pointer";
         cat.onclick = () => {
             window.location.href = "category.html";

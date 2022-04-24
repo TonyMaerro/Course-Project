@@ -315,7 +315,8 @@ ul {
 }
 
 .headingRec {
-    Width: 419px;
+    max-width: 419px;
+    width: 100%;
     height: 280px;
     position: relative;
     img {
