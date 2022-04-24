@@ -1,7 +1,7 @@
 @import url("before1370.css") (max-width: 1230px) and (min-width: 769px);
 @import url("indexXR414.css") (max-width: 769px) and (min-width: 165px);
 $measureDist: auto;
-$mainBG: #ffFFff; // white
+$mainBG: #fffFff; // white
 $widthBlocks: 1170px;
 $sizeText: 12px;
 $mainWidth: 1280px;
@@ -28,7 +28,12 @@ a {
     display: block;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 main {
+    overflow-x: hidden;
     display: flex;
     flex-shrink: 0;
     align-items: center;
@@ -36,7 +41,7 @@ main {
     padding: 0px;
     margin: 0px $measureDist;
     width: $mainWidth;
-    background: $mainBG;
+    background: $mainBG !important;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     height: auto;
 }
@@ -571,7 +576,8 @@ div[name="wrapper"] {
     // background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     border-radius: 12px;
     // background-color: #11aa11;
-    Width: 469px;
+    max-width: 469px;
+    width: 100%;
     position: relative;
     display: flex;
     flex-shrink: 0;

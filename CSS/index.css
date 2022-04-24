@@ -22,7 +22,12 @@ a {
   display: block;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
+  overflow-x: hidden;
   display: flex;
   flex-shrink: 0;
   align-items: center;
@@ -30,7 +35,7 @@ main {
   padding: 0px;
   margin: 0px auto;
   width: 1280px;
-  background: #ffFFff;
+  background: #fffFff !important;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   height: auto;
 }
@@ -43,7 +48,7 @@ header {
   box-sizing: border-box;
   Padding: 0px 0px 0px 0px;
   mix-blend-mode: through;
-  background-color: #ffFFff;
+  background-color: #fffFff;
 }
 
 .info {
@@ -54,7 +59,7 @@ header {
   margin-left: 55px;
   padding: 16px 0 16px 0;
   box-sizing: border-box;
-  background-color: #ffFFff;
+  background-color: #fffFff;
   justify-content: space-between;
 }
 
@@ -78,7 +83,7 @@ header {
 
 .forUser {
   margin-left: 55px;
-  background-color: #ffFFff;
+  background-color: #fffFff;
   Width: 1170px;
   Height: 130px;
   box-sizing: border-box;
@@ -230,7 +235,7 @@ header {
 
 .firstInfo {
   margin: 64px 55px 64px 55px;
-  background-color: #ffFFff;
+  background-color: #fffFff;
   Width: 1170px;
   Height: 280px;
   display: flex;
@@ -422,7 +427,7 @@ ul li {
   box-sizing: border-box;
   border-radius: 12px;
   height: 323px;
-  background-color: #ffFFff;
+  background-color: #fffFff;
 }
 
 .product img {
@@ -547,7 +552,7 @@ div[name="wrapper"] {
   width: 100%;
   height: 530px;
   margin: 0px 55px 0px 55px;
-  background-color: #ffFFff;
+  background-color: #fffFff;
 }
 
 .caption {
@@ -586,7 +591,8 @@ div[name="wrapper"] {
 .mainBlog {
   background-image: url("../IMG/j-scrr7LqOc.jpg");
   border-radius: 12px;
-  Width: 469px;
+  max-width: 469px;
+  width: 100%;
   position: relative;
   display: flex;
   flex-shrink: 0;
@@ -688,7 +694,7 @@ img[alt=loop] {
   align-items: flex-start;
   padding: 0px;
   width: 269px;
-  background-color: #ffFFff;
+  background-color: #fffFff;
   height: 343px;
 }
 
@@ -745,7 +751,7 @@ img[alt=loop] {
 
 .smallWrap .smallBlog {
   Width: 369px;
-  background-color: #ffFFff;
+  background-color: #fffFff;
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
@@ -797,7 +803,7 @@ img[alt=loop] {
 footer {
   width: 1170px;
   height: 556px;
-  background-color: #ffFFff;
+  background-color: #fffFff;
   margin: 0px 55px 0px 55px;
   padding: 64px 0px 64px 0px;
   display: flex;
@@ -814,7 +820,7 @@ footer .info {
 footer .productTags {
   Width: 1094px;
   Height: 111px;
-  background-color: #ffFFff;
+  background-color: #fffFff;
   position: relative;
   display: flex;
   flex-shrink: 0;

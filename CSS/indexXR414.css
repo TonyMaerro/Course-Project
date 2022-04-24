@@ -597,7 +597,8 @@ body .blogsWrapper {
 body .mainBlog {
   background-image: url("../IMG/j-scrr7LqOc.jpg");
   border-radius: 12px;
-  Width: 395px;
+  max-width: 395px;
+  width: 100%;
   position: relative;
   display: flex;
   align-self: center;

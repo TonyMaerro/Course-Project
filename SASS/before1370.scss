@@ -548,7 +548,8 @@ body .mainBlog {
     // background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
     border-radius: 12px;
     // background-color: #11aa11;
-    Width: 469px;
+    max-width: 469px;
+    width: 100%;
     position: relative;
     display: flex;
     align-self: center;
