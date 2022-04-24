@@ -694,7 +694,9 @@ body main .Wrapper_Products .products {
   flex-wrap: wrap;
   flex: 1;
   gap: 16px;
-  width: 868.99px;
+  flex-wrap: wrap;
+  max-width: 410px;
+  width: 100%;
   height: auto;
 }
 

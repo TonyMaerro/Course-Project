@@ -364,10 +364,10 @@ body .headingRec {
 body .products {
     margin: 64px $marginLeft 64px $marginLeft;
     height: $widthBlocks + 800px - 128px;
-    width: $widthBlocks;
+    max-width: $widthBlocks;
+    width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -496,16 +496,19 @@ body .sections {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    width: $widthBlocks;
+    max-width: $widthBlocks;
+    width: 100%;
+    flex-wrap: wrap;
     height: $widthBlocks + 710px;
     margin: 0px $marginLeft 0px $marginLeft;
     background-color: $mainBG;
 }
 
 body .caption {
-    display: block;
+    display: flex;
+    justify-content: center;
     height: 27px;
-    width: 155px;
+    width: 300px;
     position: static;
     font-family: Poppins;
     font-style: normal;

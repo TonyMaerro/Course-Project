@@ -563,6 +563,8 @@ body main {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            max-width: $widthBlocks;
+            width: 100%;
             flex: 1 1 268px;
             gap: 32px;
         }

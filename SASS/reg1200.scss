@@ -1,10 +1,8 @@
-@import url("reg1200.css") (max-width: 1200px) and (min-width: 421px);
-@import url("reg420.css") (max-width: 420px) and (min-width: 0);
 $measureDist: auto;
 $mainBG: #ffFFff; // white
-$widthBlocks: 1170px;
-$sizeText: 12px;
-$mainWidth: 1280px;
+$widthBlocks: 770px;
+$sizeText: 13px;
+$mainWidth: 980px;
 $marginLeft: ($mainWidth - $widthBlocks) / 2;
 @font-face {
     font-family: 'Poppins';
@@ -17,19 +15,14 @@ $marginLeft: ($mainWidth - $widthBlocks) / 2;
 }
 
 * {
-    margin: 0px;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-}
-
-main {
+body main {
     display: flex;
     flex: 1;
     flex-shrink: 0;
@@ -42,6 +35,7 @@ main {
     width: 100%;
     background: $mainBG;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    height: auto;
     header {
         display: flex;
         flex: 1;
@@ -54,11 +48,9 @@ main {
         mix-blend-mode: through;
         background-color: $mainBG;
         .info {
-            flex: 1;
             display: flex;
             flex-shrink: 0;
-            max-width: $widthBlocks;
-            width: 100%;
+            width: $widthBlocks;
             height: 48px;
             margin-left: $marginLeft;
             padding: 16px 0 16px 0;
@@ -84,104 +76,15 @@ main {
         .forUser {
             margin-left: $marginLeft;
             background-color: $mainBG;
-            max-width: $widthBlocks;
-            width: 100%;
-            flex-wrap: wrap;
-            Height: auto;
+            Width: $widthBlocks;
+            Height: 130px;
             // Padding: 0px 40px 0px 40px;
-            flex: 1;
             box-sizing: border-box;
             display: flex;
             flex-shrink: 0;
             align-items: center;
             justify-content: space-between;
             mix-blend-mode: through;
-            .categories {
-                width: auto;
-                position: relative;
-                display: flex;
-                gap: 8px;
-                .contentCat {
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 15px;
-                    line-height: 22px;
-                    color: #151515;
-                }
-                img {
-                    transition: transform .21s linear;
-                }
-                &:hover {
-                    img {
-                        transform: rotate(-180deg);
-                    }
-                    .menuWrap {
-                        list-style-type: none;
-                        position: absolute;
-                        padding: 4px 8px 4px 8px;
-                        display: flex;
-                        visibility: visible;
-                        flex-direction: column;
-                        gap: 9px;
-                        z-index: 20;
-                        top: 100%;
-                        width: 130px + 26px;
-                        left: -24px;
-                        // background-color: #46760A;
-                        .space {
-                            height: 10px;
-                        }
-                        .pointsWrap {
-                            display: flex;
-                            width: auto;
-                            gap: 8px;
-                            flex-direction: column;
-                            border-radius: 5px;
-                            padding: 8px;
-                            border: 1px solid #d2d2d2;
-                            backdrop-filter: blur(4px);
-                            background-color: RGBA(93%, 93%, 93%, 0.09);
-                            li {
-                                height: 20px;
-                                &:hover {
-                                    background-color: RGBA(2%, 70%, 2%, 0.35);
-                                    border-radius: 3px;
-                                }
-                                a:enabled,
-                                a {
-                                    font-family: 'Poppins';
-                                    font-size: $sizeText - 0px;
-                                    color: #151515;
-                                }
-                            }
-                        }
-                    }
-                }
-                .menuWrap {
-                    list-style-type: none;
-                    position: absolute;
-                    padding: 4px 8px 4px 8px;
-                    transition: top .05s linear;
-                    visibility: hidden;
-                    flex-direction: column;
-                    gap: 9px;
-                    z-index: 20;
-                    top: 1000%;
-                    width: 130px + 16px;
-                    left: -16px;
-                    // background-color: #46760A;
-                    .space {
-                        height: 30px;
-                    }
-                    .pointsWrap {
-                        display: flex;
-                        width: auto;
-                        gap: 8px;
-                        flex-direction: column;
-                    }
-                }
-            }
         }
         .research {
             display: flex;
@@ -195,27 +98,101 @@ main {
             align-items: center;
             padding: 0px 16px 0 16px;
         }
-        img[alt=loop] {
-            cursor: pointer;
-        }
-        .allCateg {
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: $sizeText +3px;
-            height: 42px;
-            line-height: 22px;
-            color: #151515;
+        .categories {
+            width: auto;
+            position: relative;
+            display: flex;
+            gap: 8px;
+            .contentCat {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 22px;
+                color: #151515;
+            }
+            img {
+                transition: transform .21s linear;
+            }
+            &:hover {
+                img {
+                    transform: rotate(-180deg);
+                }
+                .menuWrap {
+                    list-style-type: none;
+                    position: absolute;
+                    padding: 4px 8px 4px 8px;
+                    display: flex;
+                    visibility: visible;
+                    flex-direction: column;
+                    gap: 9px;
+                    z-index: 20;
+                    top: 100%;
+                    width: 130px + 26px;
+                    left: -24px;
+                    // background-color: #46760A;
+                    .space {
+                        height: 10px;
+                    }
+                    .pointsWrap {
+                        display: flex;
+                        height: auto;
+                        width: auto;
+                        gap: 8px;
+                        flex-direction: column;
+                        border-radius: 5px;
+                        padding: 8px;
+                        border: 1px solid #d2d2d2;
+                        backdrop-filter: blur(4px);
+                        background-color: RGBA(23%, 23%, 23%, 0.79) !important;
+                        li {
+                            height: 20px;
+                            &:hover {
+                                background-color: RGBA(2%, 70%, 2%, 0.35);
+                            }
+                            a:enabled,
+                            a {
+                                font-family: 'Poppins';
+                                font-size: $sizeText - 0px;
+                                color: #f5f5f5 !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .menuWrap {
+                list-style-type: none;
+                position: absolute;
+                padding: 4px 8px 4px 8px;
+                transition: top .05s linear;
+                visibility: hidden;
+                flex-direction: column;
+                gap: 9px;
+                z-index: 20;
+                top: 1000%;
+                width: 130px + 16px;
+                left: -16px;
+                // background-color: #46760A;
+                .space {
+                    height: 30px;
+                }
+                .pointsWrap {
+                    display: flex;
+                    height: auto;
+                    width: auto;
+                    gap: 8px;
+                    flex-direction: column;
+                }
+            }
         }
         .search {
-            width: 262px;
-            height: 19px;
-            font-family: 'Open Sans';
+            Width: 262px;
+            Height: 19px;
+            Font-family: Open Sans;
             font-size: $sizeText + 2px;
             font-weight: 400;
             background-color: $mainWidth;
             border: 0px solid white;
-            outline: none;
         }
         .prof_and_basket {
             display: flex;
@@ -228,64 +205,23 @@ main {
                 height: 24px;
             }
         }
-        .wrapperCateg {
-            backdrop-filter: blur(4px);
-            background-color: RGBA(255, 255, 255, 0.7);
-            visibility: hidden;
-            position: absolute;
-            top: 70%;
-            left: -16px;
-            list-style-type: none;
-            padding: 0px;
-            box-sizing: border-box;
-            width: 145px;
-        }
     }
     footer {
-        flex: 1;
-        .info {
-            display: none;
-            flex-shrink: 0;
-            max-width: $widthBlocks;
-            width: 100%;
-            height: 48px;
-            margin-left: $marginLeft;
-            padding: 16px 0 16px 0;
-            box-sizing: border-box;
-            background-color: $mainBG;
-            justify-content: space-between;
-        }
-        .greenInfo {
-            color: green;
-        }
-        .contacts {
-            width: 375px;
-            display: flex;
-            flex-shrink: 0;
-            justify-content: space-between;
-        }
-        .otherInfo {
-            width: 197px;
-            display: flex;
-            flex-shrink: 0;
-            justify-content: space-between;
-        }
-        max-width: $widthBlocks;
-        width: 100%;
+        width: $widthBlocks;
+        height: auto;
+        gap: 32px;
         background-color: $mainBG;
         margin: 0px $marginLeft 0px $marginLeft;
         padding: 64px 0px 64px 0px;
         display: flex;
-        gap: 32px;
         flex-shrink: 0;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         .productTags {
-            Width: $mainWidth - $marginLeft - 131px;
-            Height: auto;
+            width: $mainWidth - $marginLeft - 131px;
+            height: auto;
             background-color: $mainBG;
-            position: relative;
             span {
                 font-family: Poppins;
                 font-style: normal;
@@ -293,14 +229,14 @@ main {
                 font-size: $sizeText +6px;
                 line-height: 27px;
                 color: #151515;
+                height: auto;
                 display: block;
             }
             display: flex;
-            flex-shrink: 0;
-            gap: 32px;
-            justify-content: space-between;
+            flex: 1;
             flex-direction: column;
-            align-items: flex-start;
+            justify-content: space-between;
+            flex-shrink: 0;
             .tag {
                 padding: 5px 14px;
                 background: #F5F5F5;
@@ -323,8 +259,7 @@ main {
             display: flex;
             flex-shrink: 0;
             justify-content: space-between;
-            max-width: $widthBlocks;
-            width: 100%;
+            width: $widthBlocks;
             height: 167px;
             section {
                 display: flex;

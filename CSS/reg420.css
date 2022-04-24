@@ -1,5 +1,3 @@
-@import url("reg1200.css") (max-width: 1200px) and (min-width: 421px);
-@import url("reg420.css") (max-width: 420px) and (min-width: 0);
 @font-face {
   font-family: 'Poppins';
   src: url("Fonts/Poppins/Poppins-Regular.ttf");
@@ -11,38 +9,34 @@
 }
 
 * {
-  margin: 0px;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-}
-
-main {
+body main {
   display: flex;
   flex: 1;
   flex-shrink: 0;
   align-items: center;
   flex-direction: column;
   gap: 16px;
-  padding: 0px;
   margin: 0px auto;
-  max-width: 1280px;
+  max-width: 412px;
   width: 100%;
+  padding: 0 1px;
   background: #ffFFff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  height: auto;
 }
 
-main header {
+body main header {
   display: flex;
   flex: 1;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 412px;
   width: 100%;
   Height: 178px;
   box-sizing: border-box;
@@ -51,46 +45,39 @@ main header {
   background-color: #ffFFff;
 }
 
-main header .info {
+body main header .info {
+  display: none;
   flex: 1;
-  display: flex;
   flex-shrink: 0;
-  max-width: 1170px;
-  width: 100%;
-  height: 48px;
-  margin-left: 55px;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 410px;
+  height: auto;
+  margin-left: 1px;
   padding: 16px 0 16px 0;
   box-sizing: border-box;
   background-color: #ffFFff;
   justify-content: space-between;
 }
 
-main header .greenInfo {
-  color: green;
+body main header .info span {
+  font-size: 20px;
 }
 
-main header .contacts {
-  width: 375px;
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-}
-
-main header .otherInfo {
+body main header .otherInfo {
   width: 197px;
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
 }
 
-main header .forUser {
-  margin-left: 55px;
+body main header .forUser {
+  margin-left: 1px;
   background-color: #ffFFff;
-  max-width: 1170px;
-  width: 100%;
-  flex-wrap: wrap;
+  Width: 410px;
   Height: auto;
-  flex: 1;
+  gap: 16px;
+  flex-wrap: wrap;
   box-sizing: border-box;
   display: flex;
   flex-shrink: 0;
@@ -99,31 +86,78 @@ main header .forUser {
   mix-blend-mode: through;
 }
 
-main header .forUser .categories {
+body main header .research {
+  display: flex;
+  flex-shrink: 0;
+  flex: 1;
+  width: 500px;
+  justify-content: space-between;
+  height: 42px;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  align-items: center;
+  padding: 0px 16px 0 16px;
+}
+
+body main header .allCateg {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  height: 42px;
+  line-height: 22px;
+  color: #151515;
+}
+
+body main header .search {
+  Width: 240px;
+  Height: 19px;
+  Font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: 412px;
+  border: 0px solid white;
+}
+
+body main header .prof_and_basket {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  width: 88px;
+  height: 31px;
+}
+
+body main header .prof_and_basket img {
+  width: 24px;
+  height: 24px;
+}
+
+body main header .categories {
   width: auto;
   position: relative;
   display: flex;
   gap: 8px;
 }
 
-main header .forUser .categories .contentCat {
+body main header .categories .contentCat {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 12px !important;
   line-height: 22px;
   color: #151515;
 }
 
-main header .forUser .categories img {
+body main header .categories img {
   transition: transform .21s linear;
 }
 
-main header .forUser .categories:hover img {
+body main header .categories:hover img {
   transform: rotate(-180deg);
 }
 
-main header .forUser .categories:hover .menuWrap {
+body main header .categories:hover .menuWrap {
   list-style-type: none;
   position: absolute;
   padding: 4px 8px 4px 8px;
@@ -133,43 +167,43 @@ main header .forUser .categories:hover .menuWrap {
   gap: 9px;
   z-index: 20;
   top: 100%;
-  width: 156px;
+  width: 156px !important;
   left: -24px;
 }
 
-main header .forUser .categories:hover .menuWrap .space {
+body main header .categories:hover .menuWrap .space {
   height: 10px;
 }
 
-main header .forUser .categories:hover .menuWrap .pointsWrap {
+body main header .categories:hover .menuWrap .pointsWrap {
   display: flex;
-  width: auto;
+  height: auto;
+  width: 100%;
   gap: 8px;
   flex-direction: column;
   border-radius: 5px;
   padding: 8px;
   border: 1px solid #d2d2d2;
   backdrop-filter: blur(4px);
-  background-color: RGBA(93%, 93%, 93%, 0.09);
+  background-color: RGBA(23%, 23%, 23%, 0.79) !important;
 }
 
-main header .forUser .categories:hover .menuWrap .pointsWrap li {
+body main header .categories:hover .menuWrap .pointsWrap li {
   height: 20px;
 }
 
-main header .forUser .categories:hover .menuWrap .pointsWrap li:hover {
+body main header .categories:hover .menuWrap .pointsWrap li:hover {
   background-color: RGBA(2%, 70%, 2%, 0.35);
-  border-radius: 3px;
 }
 
-main header .forUser .categories:hover .menuWrap .pointsWrap li a:enabled,
-main header .forUser .categories:hover .menuWrap .pointsWrap li a {
+body main header .categories:hover .menuWrap .pointsWrap li a:enabled,
+body main header .categories:hover .menuWrap .pointsWrap li a {
   font-family: 'Poppins';
-  font-size: 12px;
-  color: #151515;
+  font-size: 13px !important;
+  color: #f5f5f5 !important;
 }
 
-main header .forUser .categories .menuWrap {
+body main header .categories .menuWrap {
   list-style-type: none;
   position: absolute;
   padding: 4px 8px 4px 8px;
@@ -183,231 +217,184 @@ main header .forUser .categories .menuWrap {
   left: -16px;
 }
 
-main header .forUser .categories .menuWrap .space {
+body main header .categories .menuWrap .space {
   height: 30px;
 }
 
-main header .forUser .categories .menuWrap .pointsWrap {
+body main header .categories .menuWrap .pointsWrap {
   display: flex;
+  height: auto;
   width: auto;
   gap: 8px;
   flex-direction: column;
 }
 
-main header .research {
-  display: flex;
-  flex-shrink: 0;
-  width: 500px;
-  justify-content: space-between;
-  height: 42px;
-  border: 1px solid #D1D1D1;
-  box-sizing: border-box;
-  border-radius: 12px;
-  align-items: center;
-  padding: 0px 16px 0 16px;
-}
-
-main header img[alt=loop] {
-  cursor: pointer;
-}
-
-main header .allCateg {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  height: 42px;
-  line-height: 22px;
-  color: #151515;
-}
-
-main header .search {
-  width: 262px;
-  height: 19px;
-  font-family: 'Open Sans';
-  font-size: 14px;
-  font-weight: 400;
-  background-color: 1280px;
-  border: 0px solid white;
-  outline: none;
-}
-
-main header .prof_and_basket {
-  display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-  width: 88px;
-  height: 31px;
-}
-
-main header .prof_and_basket img {
-  width: 24px;
-  height: 24px;
-}
-
-main header .wrapperCateg {
-  backdrop-filter: blur(4px);
-  background-color: RGBA(255, 255, 255, 0.7);
-  visibility: hidden;
-  position: absolute;
-  top: 70%;
-  left: -16px;
-  list-style-type: none;
-  padding: 0px;
-  box-sizing: border-box;
-  width: 145px;
-}
-
-main footer {
-  flex: 1;
-  max-width: 1170px;
-  width: 100%;
+body main footer {
+  width: 410px;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 32px;
   background-color: #ffFFff;
-  margin: 0px 55px 0px 55px;
+  margin: 0px 1px 0px 1px;
   padding: 64px 0px 64px 0px;
   display: flex;
-  gap: 32px;
   flex-shrink: 0;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-main footer .info {
-  display: none;
+body main footer .info {
+  display: flex;
+}
+
+body main footer .info {
+  flex: 1;
+  display: flex !important;
   flex-shrink: 0;
-  max-width: 1170px;
-  width: 100%;
-  height: 48px;
-  margin-left: 55px;
+  width: 400px;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 410px;
+  height: auto;
+  margin-left: 1px;
   padding: 16px 0 16px 0;
   box-sizing: border-box;
   background-color: #ffFFff;
   justify-content: space-between;
 }
 
-main footer .greenInfo {
+body main footer .info span {
+  font-size: 20px;
+}
+
+body main footer .info .greenInfo {
   color: green;
 }
 
-main footer .contacts {
+body main footer .info .contacts {
   width: 375px;
   display: flex;
   flex-shrink: 0;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-main footer .otherInfo {
-  width: 197px;
+body main footer .info .otherInfo {
+  width: 100%;
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
 }
 
-main footer .productTags {
-  Width: 1094px;
-  Height: auto;
+body main footer .productTags {
+  width: 280px;
+  height: auto;
   background-color: #ffFFff;
-  position: relative;
   display: flex;
-  flex-shrink: 0;
-  gap: 32px;
-  justify-content: space-between;
+  flex: 1;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
 }
 
-main footer .productTags span {
+body main footer .productTags span {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 27px;
   color: #151515;
+  height: auto;
   display: block;
 }
 
-main footer .productTags .tag {
+body main footer .productTags .tag {
   padding: 5px 14px;
   background: #F5F5F5;
   border-radius: 12px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 18px;
   color: #151515;
 }
 
-main footer .productTags .tags {
+body main footer .productTags .tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 16px;
 }
 
-main footer .Contacts {
+body main footer .Contacts {
+  flex-wrap: wrap;
   display: flex;
+  flex-direction: column;
+  gap: 32px;
   flex-shrink: 0;
+  align-items: center;
   justify-content: space-between;
-  max-width: 1170px;
-  width: 100%;
-  height: 167px;
+  width: auto;
+  width: 410px;
+  height: auto;
 }
 
-main footer .Contacts section {
+body main footer .Contacts section {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   height: 167px;
 }
 
-main footer .Contacts section:nth-child(3), main footer .Contacts section:nth-child(4) {
+body main footer .Contacts section:nth-child(3), body main footer .Contacts section:nth-child(4) {
   height: 132px;
 }
 
-main footer .Contacts section a {
+body main footer .Contacts section a {
   display: block;
   height: 19px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 19px;
   text-decoration: none;
   color: #6A983C;
 }
 
-main footer .Contacts section .contactTitle {
+body main footer .Contacts section .contactTitle {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 27px;
   color: #151515;
 }
 
-main footer .producer {
+body main footer .producer {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 19px;
   color: #151515;
 }
 
-main .homepage {
+body main .homepage {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   height: 48px;
   align-items: center;
-  width: 1170px;
+  width: 410px;
   height: 100%;
 }
 
-main .homepage .homepage_content {
+body main .homepage .homepage_content {
   display: flex;
   Width: auto;
   Height: 15px;
@@ -416,16 +403,16 @@ main .homepage .homepage_content {
   align-items: center;
 }
 
-main .homepage .homepage_content .homepage_content_title {
+body main .homepage .homepage_content .homepage_content_title {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 16px;
   color: #A9A9A9;
 }
 
-main .homepage .homepage_content .slash {
+body main .homepage .homepage_content .slash {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -434,25 +421,25 @@ main .homepage .homepage_content .slash {
   color: #D1D1D1;
 }
 
-main .homepage .homepage_content .homepage_content_subtitle {
+body main .homepage .homepage_content .homepage_content_subtitle {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 16px;
   color: #151515;
 }
 
-main .wrap-of-reg {
-  max-width: 1170px;
+body main .wrap-of-reg {
+  max-width: 410px;
   width: 100%;
-  margin: 0px 55px 0px 55px;
+  margin: 0px 1px 0px 1px;
   flex-wrap: wrap;
   display: flex;
   gap: 32px;
 }
 
-main .wrap-of-reg .entered-datas {
+body main .wrap-of-reg .entered-datas {
   display: flex;
   flex-direction: column;
   max-width: 670px;
@@ -460,7 +447,7 @@ main .wrap-of-reg .entered-datas {
   gap: 64px;
 }
 
-main .wrap-of-reg .basket {
+body main .wrap-of-reg .basket {
   max-height: 800px;
   box-sizing: border-box;
   height: auto;
@@ -475,7 +462,7 @@ main .wrap-of-reg .basket {
   padding: 32px 16px;
 }
 
-main .wrap-of-reg .basket .summ-and-desc {
+body main .wrap-of-reg .basket .summ-and-desc {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -483,7 +470,7 @@ main .wrap-of-reg .basket .summ-and-desc {
   gap: 4px;
 }
 
-main .wrap-of-reg .basket .summ-and-desc .content-sum {
+body main .wrap-of-reg .basket .summ-and-desc .content-sum {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -492,7 +479,7 @@ main .wrap-of-reg .basket .summ-and-desc .content-sum {
   color: #151515;
 }
 
-main .wrap-of-reg .basket .summ-and-desc .content-desc {
+body main .wrap-of-reg .basket .summ-and-desc .content-desc {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -501,20 +488,20 @@ main .wrap-of-reg .basket .summ-and-desc .content-desc {
   color: #A9A9A9;
 }
 
-main .wrap-of-reg .basket .summary-cost {
+body main .wrap-of-reg .basket .summary-cost {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 12px;
 }
 
-main .wrap-of-reg .basket .summary-cost .diff-cost {
+body main .wrap-of-reg .basket .summary-cost .diff-cost {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-main .wrap-of-reg .basket .summary-cost .diff-cost span {
+body main .wrap-of-reg .basket .summary-cost .diff-cost span {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -523,13 +510,13 @@ main .wrap-of-reg .basket .summary-cost .diff-cost span {
   color: #151515;
 }
 
-main .wrap-of-reg .basket .total-order {
+body main .wrap-of-reg .basket .total-order {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-main .wrap-of-reg .basket .total-order span:first-child {
+body main .wrap-of-reg .basket .total-order span:first-child {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -538,7 +525,7 @@ main .wrap-of-reg .basket .total-order span:first-child {
   color: #151515;
 }
 
-main .wrap-of-reg .basket .total-order span.summary-cost-content {
+body main .wrap-of-reg .basket .total-order span.summary-cost-content {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -548,26 +535,26 @@ main .wrap-of-reg .basket .total-order span.summary-cost-content {
   color: #6A983C;
 }
 
-main .wrap-of-reg .basket .products {
+body main .wrap-of-reg .basket .products {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 48px;
 }
 
-main .wrap-of-reg .basket .products .product-wrap {
+body main .wrap-of-reg .basket .products .product-wrap {
   display: flex;
   width: 100%;
   gap: 16px;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .product {
+body main .wrap-of-reg .basket .products .product-wrap .product {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .product .product_title {
+body main .wrap-of-reg .basket .products .product-wrap .product .product_title {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -576,7 +563,7 @@ main .wrap-of-reg .basket .products .product-wrap .product .product_title {
   color: #151515;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .product .costs {
+body main .wrap-of-reg .basket .products .product-wrap .product .costs {
   width: auto;
   padding-right: 4px;
   height: 45px;
@@ -586,26 +573,26 @@ main .wrap-of-reg .basket .products .product-wrap .product .costs {
   align-items: flex-start;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .product .costs .cost {
+body main .wrap-of-reg .basket .products .product-wrap .product .costs .cost {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 27px;
   color: #6A983C;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .product .costs .precost {
+body main .wrap-of-reg .basket .products .product-wrap .product .costs .precost {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 18px;
   text-decoration-line: line-through;
   color: #A9A9A9;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .product .made-by tr td:nth-child(1) {
+body main .wrap-of-reg .basket .products .product-wrap .product .made-by tr td:nth-child(1) {
   font-family: 'Open Sans';
   font-style: normal;
   width: 80px;
@@ -615,7 +602,7 @@ main .wrap-of-reg .basket .products .product-wrap .product .made-by tr td:nth-ch
   color: #A9A9A9;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .product .made-by tr td:nth-child(2) {
+body main .wrap-of-reg .basket .products .product-wrap .product .made-by tr td:nth-child(2) {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -624,14 +611,14 @@ main .wrap-of-reg .basket .products .product-wrap .product .made-by tr td:nth-ch
   color: #151515;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .action-on-prod {
+body main .wrap-of-reg .basket .products .product-wrap .action-on-prod {
   width: 100px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .action-on-prod .prod-logo {
+body main .wrap-of-reg .basket .products .product-wrap .action-on-prod .prod-logo {
   background: #F9F9F9;
   border-radius: 12px;
   width: 100px;
@@ -639,16 +626,16 @@ main .wrap-of-reg .basket .products .product-wrap .action-on-prod .prod-logo {
   height: 67px;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .action-on-prod .action {
+body main .wrap-of-reg .basket .products .product-wrap .action-on-prod .action {
   display: flex;
   gap: 7px;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .action-on-prod .action img {
+body main .wrap-of-reg .basket .products .product-wrap .action-on-prod .action img {
   cursor: pointer;
 }
 
-main .wrap-of-reg .basket .products .product-wrap .action-on-prod .action span {
+body main .wrap-of-reg .basket .products .product-wrap .action-on-prod .action span {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -657,23 +644,23 @@ main .wrap-of-reg .basket .products .product-wrap .action-on-prod .action span {
   color: #A9A9A9;
 }
 
-main .wrap-of-reg .additional-info .title-and-input {
+body main .wrap-of-reg .additional-info .title-and-input {
   width: 100% !important;
 }
 
-main .wrap-of-reg .additional-info .title-and-input .textarea {
+body main .wrap-of-reg .additional-info .title-and-input .textarea {
   width: 100% !important;
   height: 112px !important;
 }
 
-main .wrap-of-reg .all-inputs {
+body main .wrap-of-reg .all-inputs {
   display: flex;
   width: 100%;
   flex-direction: column;
   gap: 16px;
 }
 
-main .wrap-of-reg .all-inputs .radio-and-title-and-img {
+body main .wrap-of-reg .all-inputs .radio-and-title-and-img {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -687,19 +674,19 @@ main .wrap-of-reg .all-inputs .radio-and-title-and-img {
   border-radius: 12px;
 }
 
-main .wrap-of-reg .all-inputs .radio-and-title-and-img .radio-and-title {
+body main .wrap-of-reg .all-inputs .radio-and-title-and-img .radio-and-title {
   display: flex;
   gap: 16px;
   align-items: center;
 }
 
-main .wrap-of-reg .all-inputs .radio-and-title-and-img .radio-and-title .isCard {
+body main .wrap-of-reg .all-inputs .radio-and-title-and-img .radio-and-title .isCard {
   border: 231.5px solid #151515;
   width: 20px;
   height: 20px;
 }
 
-main .wrap-of-reg .all-inputs .radio-and-title-and-img .radio-and-title span {
+body main .wrap-of-reg .all-inputs .radio-and-title-and-img .radio-and-title span {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -708,7 +695,7 @@ main .wrap-of-reg .all-inputs .radio-and-title-and-img .radio-and-title span {
   color: #151515;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs {
   background: #FFFFFF;
   padding: 16px;
   border: 1px solid #D1D1D1;
@@ -719,52 +706,51 @@ main .wrap-of-reg .all-inputs .wrap-of-inputs {
   gap: 32px;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   justify-content: space-between;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper .title-and-input {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper .title-and-input {
   width: auto;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper .title-and-input:first-child input {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper .title-and-input:first-child input {
   max-width: 350px;
   width: 350px;
   flex: 1;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper .title-and-input:nth-child(2) input {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper .title-and-input:nth-child(2) input {
   width: 120px;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper .title-and-input:nth-child(3) input {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .card-info-wrapper .title-and-input:nth-child(3) input {
   width: 120px;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .span-and-radio {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .span-and-radio {
   display: flex;
   gap: 16px;
   align-items: center;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .span-and-radio .isCard {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .span-and-radio .isCard {
   background: #6A983C;
   border: 231.5px solid #6a983c;
   width: 20px;
   height: 20px;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .span-and-radio span {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .span-and-radio span {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -773,7 +759,7 @@ main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .span-and-radio span 
   color: #151515;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .visa-or-master {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .visa-or-master {
   width: 94px;
   height: 20px;
   display: flex;
@@ -781,24 +767,24 @@ main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .visa-or-master {
   gap: 12px;
 }
 
-main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .visa-or-master img {
+body main .wrap-of-reg .all-inputs .wrap-of-inputs .credit-card .visa-or-master img {
   height: 16px;
   width: auto;
 }
 
-main .wrap-of-reg .confirmation .datas-protections {
+body main .wrap-of-reg .confirmation .datas-protections {
   width: 213px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-main .wrap-of-reg .confirmation .datas-protections .shield {
+body main .wrap-of-reg .confirmation .datas-protections .shield {
   width: 32px;
   height: 32px;
 }
 
-main .wrap-of-reg .confirmation .datas-protections span:nth-child(2) {
+body main .wrap-of-reg .confirmation .datas-protections span:nth-child(2) {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -807,7 +793,7 @@ main .wrap-of-reg .confirmation .datas-protections span:nth-child(2) {
   color: #151515;
 }
 
-main .wrap-of-reg .confirmation .datas-protections span:nth-child(3) {
+body main .wrap-of-reg .confirmation .datas-protections span:nth-child(3) {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -816,7 +802,7 @@ main .wrap-of-reg .confirmation .datas-protections span:nth-child(3) {
   color: #A9A9A9;
 }
 
-main .wrap-of-reg .confirmation .complete {
+body main .wrap-of-reg .confirmation .complete {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -835,37 +821,37 @@ main .wrap-of-reg .confirmation .complete {
   color: white;
 }
 
-main .wrap-of-reg .confirmation .agree-wrap {
+body main .wrap-of-reg .confirmation .agree-wrap {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-main .wrap-of-reg .confirmation .agree-wrap .checkbox-and-span:first-child {
+body main .wrap-of-reg .confirmation .agree-wrap .checkbox-and-span:first-child {
   max-width: 578px;
   width: 100%;
 }
 
-main .wrap-of-reg .confirmation .agree-wrap .checkbox-and-span:nth-child(2) {
+body main .wrap-of-reg .confirmation .agree-wrap .checkbox-and-span:nth-child(2) {
   max-width: 433px;
   width: 100%;
 }
 
-main .wrap-of-reg .info {
+body main .wrap-of-reg .info {
   display: flex;
   flex-direction: column;
   gap: 32px;
   width: 100%;
 }
 
-main .wrap-of-reg .info .title-and-steps {
+body main .wrap-of-reg .info .title-and-steps {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-main .wrap-of-reg .info .title-and-steps .title-info {
+body main .wrap-of-reg .info .title-and-steps .title-info {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -874,14 +860,14 @@ main .wrap-of-reg .info .title-and-steps .title-info {
   color: #151515;
 }
 
-main .wrap-of-reg .info .title-and-steps .steps {
+body main .wrap-of-reg .info .title-and-steps .steps {
   display: flex;
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-main .wrap-of-reg .info .title-and-steps .steps span {
+body main .wrap-of-reg .info .title-and-steps .steps span {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -890,7 +876,7 @@ main .wrap-of-reg .info .title-and-steps .steps span {
   color: #A9A9A9;
 }
 
-main .wrap-of-reg .info .enterData {
+body main .wrap-of-reg .info .enterData {
   width: 100%;
   gap: 30px;
   display: flex;
@@ -898,7 +884,7 @@ main .wrap-of-reg .info .enterData {
   flex-wrap: wrap;
 }
 
-main .wrap-of-reg .info .checkbox-and-span {
+body main .wrap-of-reg .info .checkbox-and-span {
   background: #F9F9F9;
   border: 1px solid #D1D1D1;
   padding: 16px;
@@ -911,13 +897,13 @@ main .wrap-of-reg .info .checkbox-and-span {
   width: 243px;
 }
 
-main .wrap-of-reg .info .checkbox-and-span input {
+body main .wrap-of-reg .info .checkbox-and-span input {
   border: 1.5px solid #D1D1D1;
   width: 20px;
   height: 20px;
 }
 
-main .wrap-of-reg .info .checkbox-and-span .button-content {
+body main .wrap-of-reg .info .checkbox-and-span .button-content {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -926,14 +912,14 @@ main .wrap-of-reg .info .checkbox-and-span .button-content {
   color: #151515;
 }
 
-main .wrap-of-reg .info .title-and-input {
+body main .wrap-of-reg .info .title-and-input {
   display: flex;
   flex-direction: column;
   width: 319px;
   height: 60px;
 }
 
-main .wrap-of-reg .info .title-and-input .title-of-input {
+body main .wrap-of-reg .info .title-and-input .title-of-input {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -942,7 +928,7 @@ main .wrap-of-reg .info .title-and-input .title-of-input {
   color: #151515;
 }
 
-main .wrap-of-reg .info .title-and-input .entered-input {
+body main .wrap-of-reg .info .title-and-input .entered-input {
   background: #F9F9F9;
   border: 1px solid #D1D1D1;
   height: 42px;
@@ -960,7 +946,7 @@ main .wrap-of-reg .info .title-and-input .entered-input {
   color: #151515;
 }
 
-main .wrap-of-reg .info .title-and-input .entered-input::placeholder {
+body main .wrap-of-reg .info .title-and-input .entered-input::placeholder {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;

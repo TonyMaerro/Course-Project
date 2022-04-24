@@ -632,7 +632,9 @@ body main {
             flex-wrap: wrap;
             flex: 1;
             gap: 16px;
-            width: 868.99px;
+            flex-wrap: wrap;
+            max-width: $widthBlocks;
+            width: 100%;
             height: auto;
             // background-color: #11aa11;
             .product {

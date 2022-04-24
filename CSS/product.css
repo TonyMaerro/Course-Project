@@ -670,6 +670,8 @@ main .wrapper_products .products {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1170px;
+  width: 100%;
   flex: 1 1 268px;
   gap: 32px;
 }
