@@ -48,10 +48,9 @@ main {
         flex-direction: column;
         max-width: $mainWidth;
         width: 100%;
-        Height: 178px;
+        height: 178px;
         box-sizing: border-box;
-        Padding: 0px 0px 0px 0px;
-        mix-blend-mode: through;
+        padding: 0px 0px 0px 0px;
         background-color: $mainBG;
         .info {
             flex: 1;
@@ -87,7 +86,7 @@ main {
             max-width: $widthBlocks;
             width: 100%;
             flex-wrap: wrap;
-            Height: auto;
+            height: auto;
             // Padding: 0px 40px 0px 40px;
             flex: 1;
             box-sizing: border-box;

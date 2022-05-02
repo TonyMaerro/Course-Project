@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <product>
+        <title>Bananas</title>
+        <ref-img>../IMG/bananas.jpg</ref-img>
+        <desc>It is very delisious</desc>
+        <cost>12.2 USD</cost>
+    </product>
+    <product>
+        <title>Pumpkin Jack</title>
+        <ref-img>../IMG/jack.jpg</ref-img>
+        <desc>It is very big</desc>
+        <cost>100 USD</cost>
+    </product>
+    <product>
+        <title>Fruits box</title>
+        <ref-img>../IMG/fruitsBox.jpg</ref-img>
+        <desc>Thera a log of vitamins</desc>
+        <cost>12 USD</cost>
+    </product>
+    <product>
+        <title>Pomidor Jack</title>
+        <ref-img>../IMG/pomidor2.jpg</ref-img>
+        <desc>So delisious</desc>
+        <cost>5.3 USD</cost>
+    </product>
+    <product>
+        <title>Mango</title>
+        <ref-img>../IMG/mango.png</ref-img>
+        <desc>Your favorite</desc>
+        <cost>1.2 USD</cost>
+    </product>
+    <product>
+        <title>Kiwi</title>
+        <ref-img>../IMG/qiwi.jpg</ref-img>
+        <desc>For you</desc>
+        <cost>5.2 USD</cost>
+    </product>
+    <product>
+        <title>Potato</title>
+        <ref-img>../IMG/potato.jpg</ref-img>
+        <desc>Choose for bon appetit</desc>
+        <cost>15.2 USD</cost>
+    </product>
+    <product>
+        <title>Pomidor cherry</title>
+        <ref-img>../IMG/pomidor1.jpg</ref-img>
+        <desc>You like it</desc>
+        <cost>33.2 USD</cost>
+    </product>
+    <product>
+        <title>Mandarin</title>
+        <ref-img>../IMG/mandarin.jpg</ref-img>
+        <desc>I sure yout like it</desc>
+        <cost>5.3 USD</cost>
+    </product>
+    <product>
+        <title>Carrot</title>
+        <ref-img>../IMG/carrot.jpg</ref-img>
+        <desc>Bunnies's favorite</desc>
+        <cost>0.6 USD</cost>
+    </product>
+    <product>
+        <title>Cucumber</title>
+        <ref-img>../IMG/cucumber.jpg</ref-img>
+        <desc>Better than crisps</desc>
+        <cost>5.8 USD</cost>
+    </product>
+</products>

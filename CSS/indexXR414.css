@@ -14,7 +14,7 @@ body {
   justify-content: center;
 }
 
-body main {
+body .main {
   gap: 4px;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ body main {
   height: auto;
 }
 
-body main header .burger {
+body .main header .burger {
   z-index: 20;
   display: block;
   width: 30px;
@@ -41,7 +41,7 @@ body main header .burger {
   transition: all 0.3s ease;
 }
 
-body main header .info {
+body .main header .info {
   display: none;
 }
 

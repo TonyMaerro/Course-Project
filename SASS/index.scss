@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-main {
+.main {
     overflow-x: hidden;
     display: flex;
     flex-shrink: 0;
@@ -420,6 +420,7 @@ ul {
         width: 237px;
         height: 180px;
         display: block;
+        object-fit: cover;
     }
     button {
         &:hover {

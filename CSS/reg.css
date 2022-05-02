@@ -44,10 +44,9 @@ main header {
   flex-direction: column;
   max-width: 1280px;
   width: 100%;
-  Height: 178px;
+  height: 178px;
   box-sizing: border-box;
-  Padding: 0px 0px 0px 0px;
-  mix-blend-mode: through;
+  padding: 0px 0px 0px 0px;
   background-color: #ffFFff;
 }
 
@@ -89,7 +88,7 @@ main header .forUser {
   max-width: 1170px;
   width: 100%;
   flex-wrap: wrap;
-  Height: auto;
+  height: auto;
   flex: 1;
   box-sizing: border-box;
   display: flex;

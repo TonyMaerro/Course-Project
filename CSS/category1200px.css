@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-body main {
+body .main {
   display: flex;
   flex: 1;
   flex-shrink: 0;
@@ -30,7 +30,7 @@ body main {
   height: auto;
 }
 
-body main header {
+body .main header {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -42,7 +42,7 @@ body main header {
   background-color: #ffFFff;
 }
 
-body main header .info {
+body .main header .info {
   display: flex;
   flex-shrink: 0;
   width: 770px;
@@ -54,25 +54,25 @@ body main header .info {
   justify-content: space-between;
 }
 
-body main header .greenInfo {
+body .main header .greenInfo {
   color: green;
 }
 
-body main header .contacts {
+body .main header .contacts {
   width: 375px;
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
 }
 
-body main header .otherInfo {
+body .main header .otherInfo {
   width: 197px;
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
 }
 
-body main header .forUser {
+body .main header .forUser {
   margin-left: 105px;
   background-color: #ffFFff;
   Width: 770px;
@@ -85,7 +85,7 @@ body main header .forUser {
   mix-blend-mode: through;
 }
 
-body main header .research {
+body .main header .research {
   display: flex;
   flex-shrink: 0;
   width: 500px;
@@ -98,14 +98,14 @@ body main header .research {
   padding: 0px 16px 0 16px;
 }
 
-body main header .categories {
+body .main header .categories {
   width: auto;
   position: relative;
   display: flex;
   gap: 8px;
 }
 
-body main header .categories .contentCat {
+body .main header .categories .contentCat {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -114,15 +114,15 @@ body main header .categories .contentCat {
   color: #151515;
 }
 
-body main header .categories img {
+body .main header .categories img {
   transition: transform .21s linear;
 }
 
-body main header .categories:hover img {
+body .main header .categories:hover img {
   transform: rotate(-180deg);
 }
 
-body main header .categories:hover .menuWrap {
+body .main header .categories:hover .menuWrap {
   list-style-type: none;
   position: absolute;
   padding: 4px 8px 4px 8px;
@@ -136,11 +136,11 @@ body main header .categories:hover .menuWrap {
   left: -24px;
 }
 
-body main header .categories:hover .menuWrap .space {
+body .main header .categories:hover .menuWrap .space {
   height: 10px;
 }
 
-body main header .categories:hover .menuWrap .pointsWrap {
+body .main header .categories:hover .menuWrap .pointsWrap {
   display: flex;
   height: auto;
   width: auto;
@@ -153,22 +153,22 @@ body main header .categories:hover .menuWrap .pointsWrap {
   background-color: RGBA(23%, 23%, 23%, 0.79) !important;
 }
 
-body main header .categories:hover .menuWrap .pointsWrap li {
+body .main header .categories:hover .menuWrap .pointsWrap li {
   height: 20px;
 }
 
-body main header .categories:hover .menuWrap .pointsWrap li:hover {
+body .main header .categories:hover .menuWrap .pointsWrap li:hover {
   background-color: RGBA(2%, 70%, 2%, 0.35);
 }
 
-body main header .categories:hover .menuWrap .pointsWrap li a:enabled,
-body main header .categories:hover .menuWrap .pointsWrap li a {
+body .main header .categories:hover .menuWrap .pointsWrap li a:enabled,
+body .main header .categories:hover .menuWrap .pointsWrap li a {
   font-family: 'Poppins';
   font-size: 13px;
   color: #f5f5f5 !important;
 }
 
-body main header .categories .menuWrap {
+body .main header .categories .menuWrap {
   list-style-type: none;
   position: absolute;
   padding: 4px 8px 4px 8px;
@@ -182,11 +182,11 @@ body main header .categories .menuWrap {
   left: -16px;
 }
 
-body main header .categories .menuWrap .space {
+body .main header .categories .menuWrap .space {
   height: 30px;
 }
 
-body main header .categories .menuWrap .pointsWrap {
+body .main header .categories .menuWrap .pointsWrap {
   display: flex;
   height: auto;
   width: auto;
@@ -194,7 +194,7 @@ body main header .categories .menuWrap .pointsWrap {
   flex-direction: column;
 }
 
-body main header .search {
+body .main header .search {
   Width: 262px;
   Height: 19px;
   Font-family: Open Sans;
@@ -204,7 +204,7 @@ body main header .search {
   border: 0px solid white;
 }
 
-body main header .prof_and_basket {
+body .main header .prof_and_basket {
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
@@ -212,12 +212,12 @@ body main header .prof_and_basket {
   height: 31px;
 }
 
-body main header .prof_and_basket img {
+body .main header .prof_and_basket img {
   width: 24px;
   height: 24px;
 }
 
-body main footer {
+body .main footer {
   width: 770px;
   height: auto;
   gap: 32px;
@@ -231,7 +231,7 @@ body main footer {
   align-items: flex-start;
 }
 
-body main footer .productTags {
+body .main footer .productTags {
   width: 744px;
   height: auto;
   background-color: #ffFFff;
@@ -242,7 +242,7 @@ body main footer .productTags {
   flex-shrink: 0;
 }
 
-body main footer .productTags span {
+body .main footer .productTags span {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -253,7 +253,7 @@ body main footer .productTags span {
   display: block;
 }
 
-body main footer .productTags .tag {
+body .main footer .productTags .tag {
   padding: 5px 14px;
   background: #F5F5F5;
   border-radius: 12px;
@@ -265,14 +265,14 @@ body main footer .productTags .tag {
   color: #151515;
 }
 
-body main footer .productTags .tags {
+body .main footer .productTags .tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 16px;
 }
 
-body main footer .Contacts {
+body .main footer .Contacts {
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
@@ -280,7 +280,7 @@ body main footer .Contacts {
   height: 167px;
 }
 
-body main footer .Contacts section {
+body .main footer .Contacts section {
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
@@ -288,11 +288,11 @@ body main footer .Contacts section {
   height: 167px;
 }
 
-body main footer .Contacts section:nth-child(3), body main footer .Contacts section:nth-child(4) {
+body .main footer .Contacts section:nth-child(3), body .main footer .Contacts section:nth-child(4) {
   height: 132px;
 }
 
-body main footer .Contacts section a {
+body .main footer .Contacts section a {
   display: block;
   height: 19px;
   font-family: Open Sans;
@@ -304,7 +304,7 @@ body main footer .Contacts section a {
   color: #6A983C;
 }
 
-body main footer .Contacts section .contactTitle {
+body .main footer .Contacts section .contactTitle {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -313,7 +313,7 @@ body main footer .Contacts section .contactTitle {
   color: #151515;
 }
 
-body main footer .producer {
+body .main footer .producer {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -322,7 +322,7 @@ body main footer .producer {
   color: #151515;
 }
 
-body main .homepage {
+body .main .homepage {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -332,7 +332,7 @@ body main .homepage {
   height: 100%;
 }
 
-body main .homepage .homepage_content {
+body .main .homepage .homepage_content {
   display: flex;
   Width: 197px;
   Height: 15px;
@@ -340,7 +340,7 @@ body main .homepage .homepage_content {
   align-items: center;
 }
 
-body main .homepage .homepage_content .homepage_content_title {
+body .main .homepage .homepage_content .homepage_content_title {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -349,7 +349,7 @@ body main .homepage .homepage_content .homepage_content_title {
   color: #A9A9A9;
 }
 
-body main .homepage .homepage_content .slash {
+body .main .homepage .homepage_content .slash {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -358,7 +358,7 @@ body main .homepage .homepage_content .slash {
   color: #D1D1D1;
 }
 
-body main .homepage .homepage_content .homepage_content_subtitle {
+body .main .homepage .homepage_content .homepage_content_subtitle {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -367,7 +367,7 @@ body main .homepage .homepage_content .homepage_content_subtitle {
   color: #151515;
 }
 
-body main .name_Fruit_and_Veg {
+body .main .name_Fruit_and_Veg {
   width: 770px;
   height: 64px;
   display: flex;
@@ -375,7 +375,7 @@ body main .name_Fruit_and_Veg {
   justify-content: flex-start;
 }
 
-body main .name_Fruit_and_Veg span {
+body .main .name_Fruit_and_Veg span {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -384,7 +384,7 @@ body main .name_Fruit_and_Veg span {
   color: #151515;
 }
 
-body main .filters {
+body .main .filters {
   height: 108px;
   width: 770px;
   display: flex;
@@ -394,7 +394,7 @@ body main .filters {
   align-items: center;
 }
 
-body main .filters .activeButtons {
+body .main .filters .activeButtons {
   display: flex;
   width: 770px;
   height: 42px;
@@ -402,7 +402,7 @@ body main .filters .activeButtons {
   gap: 16px;
 }
 
-body main .filters .activeButtons .wrapper_of_buttons {
+body .main .filters .activeButtons .wrapper_of_buttons {
   height: 42px;
   gap: 16px;
   padding: 0px 19px 0px 16px;
@@ -415,15 +415,15 @@ body main .filters .activeButtons .wrapper_of_buttons {
   justify-content: space-between;
 }
 
-body main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content, body main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content {
+body .main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content, body .main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content {
   width: 65px;
 }
 
-body main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content .flag, body main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content .flag {
+body .main .filters .activeButtons .wrapper_of_buttons:nth-child(2) .butt_and_content .flag, body .main .filters .activeButtons .wrapper_of_buttons:nth-child(3) .butt_and_content .flag {
   border-radius: 1.5px;
 }
 
-body main .filters .activeButtons .wrapper_of_buttons .butt_and_content {
+body .main .filters .activeButtons .wrapper_of_buttons .butt_and_content {
   height: 24px;
   width: 94px;
   gap: 8px;
@@ -432,7 +432,7 @@ body main .filters .activeButtons .wrapper_of_buttons .butt_and_content {
   justify-content: space-between;
 }
 
-body main .filters .activeButtons .wrapper_of_buttons .butt_and_content .content {
+body .main .filters .activeButtons .wrapper_of_buttons .butt_and_content .content {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -441,7 +441,7 @@ body main .filters .activeButtons .wrapper_of_buttons .butt_and_content .content
   color: #151515;
 }
 
-body main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag {
+body .main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag {
   border: 1.5px solid transparent;
   border-color: #D1D1D1;
   height: 20px;
@@ -450,19 +450,19 @@ body main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag {
   border-radius: 400px;
 }
 
-body main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag:focus {
+body .main .filters .activeButtons .wrapper_of_buttons .butt_and_content .flag:focus {
   border: 5px solid transparent;
   border-color: #151515;
 }
 
-body main .filters .choosenFilters {
+body .main .filters .choosenFilters {
   display: flex;
   width: 770px;
   height: 18px;
   gap: 12px;
 }
 
-body main .filters .choosenFilters .applied_filters {
+body .main .filters .choosenFilters .applied_filters {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -471,7 +471,7 @@ body main .filters .choosenFilters .applied_filters {
   color: #A9A9A9;
 }
 
-body main .filters .choosenFilters .applied_filter {
+body .main .filters .choosenFilters .applied_filter {
   display: flex;
   background: #F4F8EC;
   border-radius: 12px;
@@ -487,11 +487,11 @@ body main .filters .choosenFilters .applied_filter {
   color: #6A983C;
 }
 
-body main .filters .choosenFilters .cross {
+body .main .filters .choosenFilters .cross {
   cursor: pointer;
 }
 
-body main .Wrapper_Products {
+body .main .Wrapper_Products {
   display: flex;
   justify-content: space-between;
   width: 770px;
@@ -499,7 +499,7 @@ body main .Wrapper_Products {
   padding: 64px 0px 64px 0px;
 }
 
-body main .Wrapper_Products .addFilters {
+body .main .Wrapper_Products .addFilters {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -509,7 +509,7 @@ body main .Wrapper_Products .addFilters {
   gap: 48px;
 }
 
-body main .Wrapper_Products .addFilters .filter_brands {
+body .main .Wrapper_Products .addFilters .filter_brands {
   width: 251px;
   height: 211px;
   display: flex;
@@ -519,7 +519,7 @@ body main .Wrapper_Products .addFilters .filter_brands {
   gap: 16px;
 }
 
-body main .Wrapper_Products .addFilters .filter_brands .titleFilter {
+body .main .Wrapper_Products .addFilters .filter_brands .titleFilter {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -529,7 +529,7 @@ body main .Wrapper_Products .addFilters .filter_brands .titleFilter {
   font-family: 'Poppins';
 }
 
-body main .Wrapper_Products .addFilters .filter_brands .list_with_brands {
+body .main .Wrapper_Products .addFilters .filter_brands .list_with_brands {
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -540,7 +540,7 @@ body main .Wrapper_Products .addFilters .filter_brands .list_with_brands {
   list-style-type: none;
 }
 
-body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand {
+body .main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -548,19 +548,19 @@ body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand 
   Height: 24px;
 }
 
-body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input {
+body .main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input {
   width: 20px;
   height: 20px;
   border: 1.5px solid #D1D1D1;
 }
 
-body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input:checked {
+body .main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand input:checked {
   background: #6A983C;
   color: white;
   border: 1.5px solid #46760A;
 }
 
-body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand span {
+body .main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand span {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -569,7 +569,7 @@ body main .Wrapper_Products .addFilters .filter_brands .list_with_brands .brand 
   color: #151515;
 }
 
-body main .Wrapper_Products .addFilters .filter_star {
+body .main .Wrapper_Products .addFilters .filter_star {
   width: 268px;
   height: 211px;
   display: flex;
@@ -579,7 +579,7 @@ body main .Wrapper_Products .addFilters .filter_star {
   gap: 16px;
 }
 
-body main .Wrapper_Products .addFilters .filter_star .titleFilter {
+body .main .Wrapper_Products .addFilters .filter_star .titleFilter {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -589,7 +589,7 @@ body main .Wrapper_Products .addFilters .filter_star .titleFilter {
   font-family: 'Poppins';
 }
 
-body main .Wrapper_Products .addFilters .filter_star .list_with_stars {
+body .main .Wrapper_Products .addFilters .filter_star .list_with_stars {
   display: flex;
   padding: 0;
   flex-direction: column;
@@ -600,7 +600,7 @@ body main .Wrapper_Products .addFilters .filter_star .list_with_stars {
   list-style-type: none;
 }
 
-body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star {
+body .main .Wrapper_Products .addFilters .filter_star .list_with_stars .star {
   display: flex;
   gap: 8px;
   align-items: center;
@@ -608,24 +608,24 @@ body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star {
   Height: 24px;
 }
 
-body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input {
+body .main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input {
   width: 20px;
   height: 20px;
   border: 1.5px solid #D1D1D1;
 }
 
-body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input:checked {
+body .main .Wrapper_Products .addFilters .filter_star .list_with_stars .star input:checked {
   background: #6A983C;
   color: white;
   border: 1.5px solid #46760A;
 }
 
-body main .Wrapper_Products .addFilters .filter_star .list_with_stars .star .nostar path {
+body .main .Wrapper_Products .addFilters .filter_star .list_with_stars .star .nostar path {
   fill: white !important;
   stroke: #D1D1D1;
 }
 
-body main .Wrapper_Products .products {
+body .main .Wrapper_Products .products {
   display: flex;
   justify-content: justify-content;
   flex-wrap: wrap;
@@ -637,7 +637,7 @@ body main .Wrapper_Products .products {
   height: auto;
 }
 
-body main .Wrapper_Products .products .product {
+body .main .Wrapper_Products .products .product {
   width: 268px;
   height: 360px;
   border: 1px solid #D1D1D1;
@@ -651,7 +651,7 @@ body main .Wrapper_Products .products .product {
   position: relative;
 }
 
-body main .Wrapper_Products .products .product .sale {
+body .main .Wrapper_Products .products .product .sale {
   position: absolute;
   padding: 4px 8px 4px 8px;
   font-family: 'Poppins';
@@ -666,14 +666,14 @@ body main .Wrapper_Products .products .product .sale {
   color: #6A983C;
 }
 
-body main .Wrapper_Products .products .product .product_logo {
+body .main .Wrapper_Products .products .product .product_logo {
   background: #F9F9F9;
   border-radius: 12px;
   Width: 236px;
   Height: 180px;
 }
 
-body main .Wrapper_Products .products .product .product_info {
+body .main .Wrapper_Products .products .product .product_info {
   width: 236px;
   height: 132px;
   display: flex;
@@ -682,7 +682,7 @@ body main .Wrapper_Products .products .product .product_info {
   align-items: flex-start;
 }
 
-body main .Wrapper_Products .products .product .product_info .product_title {
+body .main .Wrapper_Products .products .product .product_info .product_title {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -692,7 +692,7 @@ body main .Wrapper_Products .products .product .product_info .product_title {
   height: 23px;
 }
 
-body main .Wrapper_Products .products .product .product_info .product_description {
+body .main .Wrapper_Products .products .product .product_info .product_description {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -702,7 +702,7 @@ body main .Wrapper_Products .products .product .product_info .product_descriptio
   color: #575757;
 }
 
-body main .Wrapper_Products .products .product .product_info .product_stars {
+body .main .Wrapper_Products .products .product .product_info .product_stars {
   height: 16px;
   width: 88px;
   display: flex;
@@ -710,23 +710,23 @@ body main .Wrapper_Products .products .product .product_info .product_stars {
   align-items: center;
 }
 
-body main .Wrapper_Products .products .product .product_info .product_stars .nostar path {
+body .main .Wrapper_Products .products .product .product_info .product_stars .nostar path {
   fill: white !important;
   stroke: #D1D1D1;
 }
 
-body main .Wrapper_Products .products .product .product_info .product_stars .blstar path {
+body .main .Wrapper_Products .products .product .product_info .product_stars .blstar path {
   fill: #151515 !important;
 }
 
-body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy {
+body .main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy {
   width: 236px;
   height: 45px;
   display: flex;
   justify-content: space-between;
 }
 
-body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs {
+body .main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs {
   width: auto;
   padding-right: 4px;
   height: 45px;
@@ -736,7 +736,7 @@ body main .Wrapper_Products .products .product .product_info .cost_precost_butto
   align-items: flex-start;
 }
 
-body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .cost {
+body .main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .cost {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -745,7 +745,7 @@ body main .Wrapper_Products .products .product .product_info .cost_precost_butto
   color: #151515;
 }
 
-body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .precost {
+body .main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .costs .precost {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -755,7 +755,7 @@ body main .Wrapper_Products .products .product .product_info .cost_precost_butto
   color: #A9A9A9;
 }
 
-body main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .buttonBuy {
+body .main .Wrapper_Products .products .product .product_info .cost_precost_buttonBuy .buttonBuy {
   background: #6A983C;
   border: 2px solid #46760A;
   box-sizing: border-box;
